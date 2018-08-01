@@ -1,25 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>HTML5 boilerplate – all you really need…</title>
-	<link rel="stylesheet" href="css/style.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	  	<meta charset="utf-8">
+		<title>JS Luxembourg Meetup</title>
+		<meta name="description" content="The finest JavaScript User Group in Luxembourg - Meeting the first Wednesday of each month">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="theme/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="theme/assets/css/noscript.css" /></noscript>
+		<style>
+			#banner .logo img {
+				width: 200px;
+				height: 200px;
+			}
 
-<body id="home">
+			.meetup {
+				margin-left: 30px;
+			}
 
-	<h1>Js Luxembourg</h1>
-  
-  <ul>
-	  <li><a href="https://twitter.com/jsluxembourg">JSLuxembourg on Twitter</a></li>
-	  <li><a href="https://www.meetup.com/JSLuxembourg/">JSLuxembourg on Meetup</a></li>
-	  
-	</ul>
-	
-	<iframe width="225" height="570" src="http://meetu.ps/3j77Qv" frameborder="0"></iframe>
+			.twitter-timeline {
+				margin-right: 30px;
+			}
 
-</body>
+			body.jslu {
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("img/bg.jpg");
+			}
+
+			.jslu .gitter-open-chat-button {
+				background-color: #f6c347;
+				color: black;
+				font-weight: bold;
+			}
+			.jslu .gitter-open-chat-button {
+				background-color: #f6c347;
+				color: black;
+				font-weight: bold;
+			}
+
+			.jslu.is-preload .gitter-open-chat-button {
+				opacity: 0;
+			}
+
+		</style>
+	</head>
+	<body class="is-preload jslu">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+
+				<!-- Gitter "Open Chat" button -->
+				<!-- Customise here https://sidecar.gitter.im/ -->
+				<script>
+				  ((window.gitter = {}).chat = {}).options = {
+				    room: 'js-luxembourg/Lobby'
+				  };
+				</script>
+				<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><img src="img/jslu-logo.jpg" alt="JS Luxembourg"></div>
+							<h2>JS Luxembourg</h2>
+							<p>The finest JavaScript User Group in Luxembourg</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<iframe class="meetup" width="225" height="570" src="http://meetu.ps/3j8dzQ" frameborder="0"></iframe>
+									<div class="content">
+										<h2 class="major">When is the next event?</h2>
+										<p>We usually have one event per month, the first wednesday of the month. Each event is announced on meetup.com., where we kindly ask you to RSVP for organisational reasons. The location of the event changes regularly, so be sure to check the event page on meetup.com for more details. </p>
+										<a href="https://www.meetup.com/JSLuxembourg/" class="special">JSLuxembourg on Meetup.com</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a class="twitter-timeline" data-lang="en" data-width="450" data-height="300" data-dnt="true" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/JSLuxembourg?ref_src=twsrc%5Etfw">Tweets by JSLuxembourg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+									<div class="content">
+										<h2 class="major">How can I stay informed?</h2>
+										<p>We have Twitter and Facebook accounts managed by our members.</p>
+										<a href="https://twitter.com/jsluxembourg" class="special">Follow us on Twitter</a>
+										<!-- <a href="https://facebook.com/FIXME" class="special">Follow us on Facebook</a> -->
+										<!-- TODO mailchimp subscribe form -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="https://gitter.im/js-luxembourg" class="image"><img src="img/gitter.svg" alt="gitter" /></a>
+									<div class="content">
+										<h2 class="major">How can I stay in touch with the community?</h2>
+										<p>We are currently switching to Gitter. Gitter is simple, you can log in with your Twitter, Github or Gitlab account and join our room! To join us, click on the following link or on the "open&nbsp;chat" button at the bottom right of this website.</p>
+										<a href="https://gitter.im/js-luxembourg" class="special">Join our Gitter room</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Last talks &amp; slides</h2>
+									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<section class="features">
+										<article>
+											<a href="https://speakerdeck.com/littleiffel/reflections-on-operating-a-serverless-api" class="image"><img src="pres_thumb/serverless_TNi.jpg" alt="On Serverless - Using Serverless in Production" /></a>
+											<h3 class="major">On Serverless - Using Serverless in Production</h3>
+											<p>by <a href="https://twitter.com/littleiffel">Thierry Nicola</a> / June 2018</p>
+											<a href="https://speakerdeck.com/littleiffel/reflections-on-operating-a-serverless-api" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://www.dropbox.com/s/gwayo9hn7vfv2q1/CSS-Variables.pdf?dl=0" class="image"><img src="pres_thumb/css_variables_GCr.png" alt="CSS Variables in the real life" /></a>
+											<h3 class="major">CSS Variables in the real life</h3>
+											<p>by <a href="https://twitter.com/geoffrey_crofte">Geoffrey Crofte</a> / May 2018</p>
+											<a href="https://www.dropbox.com/s/gwayo9hn7vfv2q1/CSS-Variables.pdf?dl=0" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://slides.com/alainvagner/deck#/" class="image"><img src="pres_thumb/accessibility_101_AVa.png" alt="Accessibility 101" /></a>
+											<h3 class="major">Accessibility 101</h3>
+											<p>by <a href="https://twitter.com/biou">Alain Vagner</a> / May 2018</p>
+											<a href="https://slides.com/alainvagner/deck#/" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://github.com/ou2s/slides/raw/master/JSMeetup%20Luxembourg%20-%2003042018/JSMeetup_RN_in_Production.pdf" class="image"><img src="pres_thumb/react_native_OGh.png" alt="React Native in production" /></a>
+											<h3 class="major">React Native in production</h3>
+											<p>by <a href="https://github.com/ou2s">Oussama Ghalbzouri</a> / April 2018</p>
+											<a href="https://github.com/ou2s/slides/raw/master/JSMeetup%20Luxembourg%20-%2003042018/JSMeetup_RN_in_Production.pdf" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://github.com/GrosSacASac/JavaScript-Set-Up/tree/master/general/html-streaming" class="image"><img src="pres_thumb/html_streaming_CWa.png" alt="HTML Streaming" /></a>
+											<h3 class="major">HTML Streaming</h3>
+											<p>by <a href="https://github.com/GrosSacASac/">Cyril</a> / April 2018</p>
+											<a href="https://github.com/GrosSacASac/JavaScript-Set-Up/tree/master/general/html-streaming" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://github.com/anton-kabysh/flowtype-experiments" class="image"><img src="pres_thumb/flow_type_AKa.png" alt="Let your types Flow. Pragmatic introduction to Flowtype" /></a>
+											<h3 class="major">Let your types Flow. Pragmatic introduction to Flowtype</h3>
+											<p>by <a href="https://github.com/anton-kabysh">Anton Kabysh</a> / March 2018</p>
+											<a href="https://github.com/anton-kabysh/flowtype-experiments" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://docs.google.com/presentation/d/1E8Cz1QX6nLKzG7Vul9bX8hby9u22iT3k2gByCnBHcyM/edit?usp=sharing" class="image"><img src="pres_thumb/ionic_ASp.png" alt="IONIC 3 from scratch to store" /></a>
+											<h3 class="major">IONIC 3 from scratch to store</h3>
+											<p>by <a href="https://twitter.com/arthurspitznage?lang=en">Arthur Spitznagel</a>  / February 2018</p>
+											<a href="https://docs.google.com/presentation/d/1E8Cz1QX6nLKzG7Vul9bX8hby9u22iT3k2gByCnBHcyM/edit?usp=sharing" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://github.com/Algar/JSLuxembourg-February2018-VisualRegressionTesting" class="image"><img src="pres_thumb/visual_regression_AGa.png" alt="Visual regression testing" /></a>
+											<h3 class="major">Visual regression testing</h3>
+											<p>by <a href="https://www.yotako.io">Alfonso Garcia</a> / February 2018</p>
+											<a href="https://github.com/Algar/JSLuxembourg-February2018-VisualRegressionTesting" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://docs.google.com/presentation/d/10dvXKYrEZ_H8MElw6Cdpd4u5COBpJPlquT6Kf2o9iNs/edit?usp=sharing" class="image"><img src="pres_thumb/graphql_TNi.png" alt="What the QL? Introduction to GraphQL." /></a>
+											<h3 class="major">What the QL? Introduction to GraphQL.</h3>
+											<p>by <a href="https://twitter.com/littleiffel">Thierry Nicola</a> / January 2018</p>
+											<a href="https://docs.google.com/presentation/d/10dvXKYrEZ_H8MElw6Cdpd4u5COBpJPlquT6Kf2o9iNs/edit?usp=sharing" class="special">Slides</a>
+										</article>
+										<article>
+											<a href="https://js-mf.github.io/" class="image"><img src="pres_thumb/jsmf_JSo.png" alt="The JavaScript Way of Model-Driven Engineering" /></a>
+											<h3 class="major">The JavaScript Way of Model-Driven Engineering</h3>
+											<p>by <a href="https://twitter.com/reversal_js">Jean-Sébastien Sottet</a> / January 2018</p>
+											<a href="https://js-mf.github.io/" class="special">Slides</a>
+										</article>
+									</section>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch about Talks or Sponsorship</h2>
+							<p>If you would like to propose a talk, don't be shy, just use this form and contact us :) We are also open for any kind of help or sponsorship. With regards to sponsorship, we are mainly looking for companies / organisations that would like to host our events in Luxembourg-City and offer the catering in exchange of some visibility. We can propose to display the name and logo of your company on the meetup event page, we will thank you in tweets about the event and we will thank you during the event.</p>
+							<form method="post" action="https://formspree.io/jslux@sous-anneau.org">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<input type="text" name="_gotcha" style="display:none" />
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-twitter"><a href="#">twitter.com/jsluxembourg</a></li>
+								<!-- <li class="fa-facebook"><a href="#">facebook.com/FIXME</a></li> -->
+							</ul>
+							<ul class="copyright">
+								<li>&copy; JSLuxembourg. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="theme/assets/js/jquery.min.js"></script>
+			<script src="theme/assets/js/jquery.scrollex.min.js"></script>
+			<script src="theme/assets/js/browser.min.js"></script>
+			<script src="theme/assets/js/breakpoints.min.js"></script>
+			<script src="theme/assets/js/util.js"></script>
+			<script src="theme/assets/js/main.js"></script>
+
+	</body>
 </html>

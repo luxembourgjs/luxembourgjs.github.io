@@ -3374,7 +3374,7 @@ input, select, textarea {
 				width: 2.25em;
 			}
 
-		#banner h2 {
+		#banner h1 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -3465,7 +3465,7 @@ input, select, textarea {
 						font-size: 1.5em;
 					}
 
-				#banner h2 {
+				#banner h1 {
 					font-size: 1.5em;
 				}
 
@@ -3483,7 +3483,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-preload #banner h2 {
+		body.is-preload #banner h1 {
 			opacity: 0;
 			-moz-transform: translateX(0.25em);
 			-webkit-transform: translateX(0.25em);

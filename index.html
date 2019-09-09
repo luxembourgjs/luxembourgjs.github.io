@@ -18,8 +18,31 @@
 				height: 200px;
 			}
 
-			.meetup {
-				margin-left: 30px;
+			.meetup_widget {
+				background-color: #f6c347;
+				color: black;
+				border-radius: 6px;
+				margin-left: 20px;
+				padding: 10px;
+				text-align: left;
+				font-size: 83%;
+				width: 350px;
+			}
+
+			#m_date {
+				font-size: 120%;
+				font-weight: bold;
+			}
+
+			#m_link a {
+				color: black;
+				font-weight: bold;
+				font-size: 110%;
+				border-bottom: dotted 1px black;
+			}
+
+			#m_nr_going {
+				font-size: 90%;
 			}
 
 			.twitter-timeline {
@@ -46,6 +69,35 @@
 			}
 
 		</style>
+		<script>
+			// get data from meetup.com API
+			function updateEvent(response) {
+				let next = response.data.next_event; 
+				let date = new Date(next.time);
+				document.getElementById("m_date").innerHTML = date.toLocaleString('en-UK');
+				document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/JSLuxembourg/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
+				document.getElementById("m_nr_going").innerHTML = next.yes_rsvp_count;
+			}
+
+
+
+			function ready(fn) {
+			  if (document.readyState != 'loading'){
+			    fn();
+			  } else {
+			    document.addEventListener('DOMContentLoaded', fn);
+			  }
+			}
+
+			ready(function() {
+				// JSONP because meetup.com does not know about CORS headers...
+				let script = document.createElement('script');
+				script.src = 'https://api.meetup.com/JSLuxembourg?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
+				document.body.appendChild(script);				
+			})
+
+
+		</script>	
 	</head>
 	<body class="is-preload jslu">
 
@@ -78,7 +130,12 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<iframe title="Infos from meetup.com" class="meetup" width="225" height="570" src="https://meetu.ps/3j8dzQ" frameborder="0"></iframe>
+									<div class="meetup_widget">
+										Next meetup:<br />
+										<span id="m_date"></span><br />
+										<span id="m_link"></span><br />
+										<span id="m_nr_going"></span> people going
+									</div>
 									<div class="content">
 										<h2 class="major">When is the next event?</h2>
 										<p>We usually have one event per month, the first wednesday of the month. Each event is announced on meetup.com., where we kindly ask you to RSVP for organisational reasons. The location of the event changes regularly, so be sure to check the event page on meetup.com for more details. </p>

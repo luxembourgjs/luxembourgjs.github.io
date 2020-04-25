@@ -87,7 +87,7 @@
       let next = response.data.next_event;
       let date = new Date(next.time);
       document.getElementById("m_date").innerHTML = date.toLocaleString('en-UK');
-      document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/JSLuxembourg/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
+      document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/luxembourgjs/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
       document.getElementById("m_nr_going").innerHTML = next.yes_rsvp_count;
     }
 
@@ -104,7 +104,7 @@
     ready(function () {
       // JSONP because meetup.com does not know about CORS headers...
       let script = document.createElement('script');
-      script.src = 'https://api.meetup.com/JSLuxembourg?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
+      script.src = 'https://api.meetup.com/luxembourgjs?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
       document.body.appendChild(script);
     })
 
@@ -154,7 +154,7 @@
             <p>We usually have one event per month, the first wednesday of the month. Each event is announced on
               meetup.com., where we kindly ask you to RSVP for organisational reasons. The location of the event changes
               regularly, so be sure to check the event page on meetup.com for more details. </p>
-            <a href="https://www.meetup.com/JSLuxembourg/" class="special">JSLuxembourg on Meetup.com</a>
+            <a href="https://www.meetup.com/luxembourgjs/" class="special">LuxembourgJS on Meetup.com</a>
           </div>
         </div>
       </section>
@@ -164,13 +164,13 @@
         <div class="inner">
           <a class="twitter-timeline" data-lang="en" data-width="450" data-height="300" data-dnt="true"
             data-theme="dark" data-link-color="#2B7BB9"
-            href="https://twitter.com/JSLuxembourg?ref_src=twsrc%5Etfw">Tweets by JSLuxembourg</a>
+            href="https://twitter.com/luxembourgjs?ref_src=twsrc%5Etfw">Tweets by LuxembourgJS</a>
           <script async src="https://platform.twitter.com/widgets.js"></script>
           <div class="content">
             <h2 class="major">How can I stay informed?</h2>
             <p>We have Twitter and Facebook accounts managed by our members.</p>
-            <a href="https://twitter.com/jsluxembourg" class="special">Follow us on Twitter</a>
-            <a href="https://www.facebook.com/groups/jsluxembourg/" class="special">Follow us on Facebook</a>
+            <a href="https://twitter.com/luxembourgjs" class="special">Follow us on Twitter</a>
+            <a href="https://www.facebook.com/groups/luxembourgjs/" class="special">Follow us on Facebook</a>
           </div>
         </div>
       </section>
@@ -475,7 +475,7 @@
               contact one of the meetup organisers immediately. </p>
 
             <p>
-              <a href="https://www.meetup.com/JSLuxembourg/members/?op=leaders">Contact the organisation team</a>
+              <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">Contact the organisation team</a>
             </p>
             <p>
               The organisation team will be happy to help participants contact venue security or local law enforcement,
@@ -483,7 +483,7 @@
 
             <h4>Addressing Grievances</h4>
             <p>If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should
-              notify <a href="https://www.meetup.com/JSLuxembourg/members/?op=leaders">the organisation team</a> with a
+              notify <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">the organisation team</a> with a
               concise description of your grievance. Your grievance will be handled in accordance with our existing
               governing policies.</p>
             <h4>Scope</h4>
@@ -543,12 +543,12 @@
           </ul>
         </form>
         <ul class="contact">
-          <li class="fa-twitter"><a href="https://twitter.com/jsluxembourg">twitter.com/jsluxembourg</a></li>
+          <li class="fa-twitter"><a href="https://twitter.com/luxembourgjs">twitter.com/luxembourgjs</a></li>
           <li class="fa-facebook"><a
-              href="https://www.facebook.com/groups/jsluxembourg/">facebook.com/groups/jsluxembourg</a></li>
+              href="https://www.facebook.com/groups/luxembourgjs/">facebook.com/groups/luxembourgjs</a></li>
         </ul>
         <ul class="copyright">
-          <li>&copy; JSLuxembourg. All rights reserved.</li>
+          <li>&copy; LuxembourgJS. All rights reserved.</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
       </div>

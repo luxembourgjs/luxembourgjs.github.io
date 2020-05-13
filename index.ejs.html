@@ -197,7 +197,7 @@
           <section class="features">
             <% slides.forEach(function(slide){ %>
               <article>
-                <a href="<%= slide.link %>" class="image">
+                <a href="<%= slide.link %>" rel="nofollow" class="image">
                   <img src="<%= slide.thumb %>" alt="<%= slide.title %>" />
                 </a>
                 <h3 class="major"><%= slide.title %></h3>
@@ -206,11 +206,11 @@
                     if(!author.link) {
                       return author.name;
                     }
-                    return '<a href="' + author.link + '">' + author.name + '</a>';
+                    return '<a href="' + author.link + '" rel="nofollow">' + author.name + '</a>';
                   }).join(' & '); %>
                   / <%= slide.date %>
                 </p>
-                <a href="<%= slide.link %>" class="special">Slides</a>
+                <a href="<%= slide.link %>" class="special" rel="nofollow">Slides</a>
               </article>
             <% }); %>
           </section>

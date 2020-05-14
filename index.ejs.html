@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LuxembourgJS Meetup</title>
+  <meta name="description"
+    content="The finest JavaScript User Group in Luxembourg - Meeting the first Wednesday of each month">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="theme/assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="theme/assets/css/noscript.css" /></noscript>
+  <style>
+    #banner .logo img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .meetup_widget {
+      background-color: #f6c347;
+      color: black;
+      border-radius: 6px;
+      margin-left: 20px;
+      padding: 10px;
+      text-align: left;
+      font-size: 83%;
+      width: 350px;
+    }
+
+    #m_date {
+      font-size: 120%;
+      font-weight: bold;
+    }
+
+    #m_link a {
+      color: black;
+      font-weight: bold;
+      font-size: 110%;
+      border-bottom: dotted 1px black;
+    }
+
+    #m_nr_going {
+      font-size: 90%;
+    }
+
+    .twitter-timeline {
+      margin-right: 30px;
+    }
+
+    body.jslu {
+      background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("img/bg.jpg");
+    }
+
+    .jslu .gitter-open-chat-button {
+      background-color: #f6c347;
+      color: black;
+      font-weight: bold;
+    }
+
+    .jslu .gitter-open-chat-button {
+      background-color: #f6c347;
+      color: black;
+      font-weight: bold;
+    }
+
+    .jslu.is-preload .gitter-open-chat-button {
+      opacity: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      .meetup_widget {
+        margin-left: 0;
+        margin-bottom: 40px;
+        width: 100%;
+
+      }
+    }
+  </style>
+  <script>
+    // get data from meetup.com API
+    function updateEvent(response) {
+      let next = response.data.next_event;
+      let date = new Date(next.time);
+      document.getElementById("m_date").innerHTML = date.toLocaleString('en-UK');
+      document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/luxembourgjs/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
+      document.getElementById("m_nr_going").innerHTML = next.yes_rsvp_count;
+    }
+
+
+
+    function ready(fn) {
+      if (document.readyState != 'loading') {
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+
+    ready(function () {
+      // JSONP because meetup.com does not know about CORS headers...
+      let script = document.createElement('script');
+      script.src = 'https://api.meetup.com/luxembourgjs?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
+      document.body.appendChild(script);
+    })
+
+
+  </script>
+</head>
+
+<body class="is-preload jslu">
+
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+
+
+    <!-- Gitter "Open Chat" button -->
+    <!-- Customise here https://sidecar.gitter.im/ -->
+    <script>
+        ((window.gitter = {}).chat = {}).options = {
+        room: 'js-luxembourg/Lobby'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <div class="logo"><img src="img/jslu-logo.jpg" alt="LuxembourgJS"></div>
+        <h1>LuxembourgJS</h1>
+        <p>The finest JavaScript User Group in Luxembourg</p>
+      </div>
+    </section>
+
+    <!-- Wrapper -->
+    <section id="wrapper">
+
+      <!-- One -->
+      <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+          <div class="meetup_widget">
+            Next meetup:<br />
+            <span id="m_date"></span><br />
+            <span id="m_link"></span><br />
+            <span id="m_nr_going"></span> people going
+          </div>
+          <div class="content">
+            <h2 class="major">When is the next event?</h2>
+            <p>We usually have one event per month, the first wednesday of the month. Each event is announced on
+              meetup.com., where we kindly ask you to RSVP for organisational reasons. The location of the event changes
+              regularly, so be sure to check the event page on meetup.com for more details. </p>
+            <a href="https://www.meetup.com/luxembourgjs/" class="special">LuxembourgJS on Meetup.com</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+          <a class="twitter-timeline" data-lang="en" data-width="450" data-height="300" data-dnt="true"
+            data-theme="dark" data-link-color="#2B7BB9"
+            href="https://twitter.com/luxembourgjs?ref_src=twsrc%5Etfw">Tweets by LuxembourgJS</a>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
+          <div class="content">
+            <h2 class="major">How can I stay informed?</h2>
+            <p>We have Twitter and Facebook accounts managed by our members.</p>
+            <a href="https://twitter.com/luxembourgjs" class="special">Follow us on Twitter</a>
+            <a href="https://www.facebook.com/groups/luxembourgjs/" class="special">Follow us on Facebook</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+          <a href="https://gitter.im/js-luxembourg" class="image"><img src="img/gitter.svg" alt="gitter" /></a>
+          <div class="content">
+            <h2 class="major">How can I stay in touch with the community?</h2>
+            <p>We are currently switching to Gitter. Gitter is simple, you can log in with your Twitter, Github or
+              Gitlab account and join our room! To join us, click on the following link or on the "open&nbsp;chat"
+              button at the bottom right of this website.</p>
+            <a href="https://gitter.im/js-luxembourg" class="special">Join our Gitter room</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Four -->
+      <section id="four" class="wrapper alt style1">
+        <div class="inner">
+          <h2 class="major" id="slides">Last talks &amp; slides</h2>
+          <p>You can find here the slides from the latest talks that have been given during our meetups.</p>
+          <section class="features">
+            <% slides.forEach(function(slide){ %>
+              <article>
+                <a href="<%= slide.link %>" rel="nofollow" class="image">
+                  <img src="<%= slide.thumb %>" alt="<%= slide.title %>" />
+                </a>
+                <h3 class="major"><%= slide.title %></h3>
+                <p>by
+                  <%- slide.authors.map(function(author){
+                    if(!author.link) {
+                      return author.name;
+                    }
+                    return '<a href="' + author.link + '" rel="nofollow">' + author.name + '</a>';
+                  }).join(' & '); %>
+                  / <%= slide.date %>
+                </p>
+                <a href="<%= slide.link %>" class="special" rel="nofollow">Slides</a>
+              </article>
+            <% }); %>
+          </section>
+        </div>
+      </section>
+
+      <!-- Three -->
+      <section id="five" class="wrapper style2">
+        <div class="inner">
+          <div class="content" id="codeofconduct">
+            <h2 class="major">Code of Conduct</h2>
+            <p>All attendees, speakers, sponsors and volunteers at our meetup are required to agree with the following
+              code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all
+              participants to help ensure a safe environment for everybody.</p>
+
+            <h3>The Quick Version</h3>
+            <p>Our meetup is dedicated to providing a harassment-free experience for everyone, regardless of gender,
+              gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race,
+              ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of meetup
+              participants in any form. Sexual language and imagery is not appropriate for any meetup venue, including
+              talks, networking, social events, Twitter and other online media. Meetup participants violating these
+              rules may be sanctioned or expelled from the meetup at the discretion of the meetup organisers.</p>
+
+            <h3>The Less Quick Version</h3>
+            <h4>Purpose</h4>
+
+            <p>A primary goal of LuxembourgJS is to be inclusive to the largest number of contributors, with the most
+              varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and
+              welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic
+              status, and religion (or lack thereof).
+              This code of conduct outlines our expectations for all those who participate in our community, as well as
+              the consequences for unacceptable behavior. We will also apply those rules for the selection of speakers,
+              sponsors, and venues.
+              We invite all those who participate in LuxembourgJS to help us create a safe and positive experience for
+              everyone.</p>
+
+            <h4>Unacceptable behavior</h4>
+            <p>The following behaviors are considered harassment and are unacceptable within our community:</p>
+            <ul>
+              <li>Discriminatory jokes and language related to gender, gender identity and expression, age, sexual
+                orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or
+                technology choices.</li>
+              <li>Posting or displaying sexually explicit or violent material.</li>
+              <li>Violence, threats of violence or violent language directed against another person.</li>
+              <li>Posting or threatening to post other people’s personally identifying information ("doxing").</li>
+              <li>Personal insults, particularly those related to gender, sexual orientation, race, religion, or
+                disability.</li>
+              <li>Inappropriate photography or recording.</li>
+              <li>Inappropriate physical contact. You should have someone’s consent before touching them.</li>
+              <li>Unwelcome sexual attention. This includes, sexualized comments or jokes; inappropriate touching,
+                groping, and unwelcomed sexual advances. Our meetups are not dating events.</li>
+              <li>Deliberate intimidation, stalking or following (online or in person).</li>
+              <li>Advocating for, or encouraging, any of the above behavior.</li>
+              <li>Sustained disruption of community events, including talks and presentations.</li>
+            </ul>
+
+            <h4>Consequences of Unacceptable Behavior</h4>
+            <p>Unacceptable behavior from any community member, including sponsors and those with decision-making
+              authority, will not be tolerated.
+              Anyone asked to stop unacceptable behavior is expected to comply immediately.
+              If a participant engages in harassing behavior, the meetup organisers may take any action they deem
+              appropriate, up to and including a temporary ban or permanent expulsion from the community without
+              warning.</p>
+
+            <h4>Reporting an incident</h4>
+            <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+              contact one of the meetup organisers immediately. </p>
+
+            <p>
+              <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">Contact the organisation team</a>
+            </p>
+            <p>
+              The organisation team will be happy to help participants contact venue security or local law enforcement,
+              provide escorts, or otherwise assist those experiencing harassment to feel safe during the meetups. </p>
+
+            <h4>Addressing Grievances</h4>
+            <p>If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should
+              notify <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">the organisation team</a> with a
+              concise description of your grievance. Your grievance will be handled in accordance with our existing
+              governing policies.</p>
+            <h4>Scope</h4>
+            <p>We expect all participants (attendees; sponsors; speakers; hosts; and other guests) to abide by this Code
+              of Conduct in all community venues–online and in-person–as well as in all one-on-one communications
+              pertaining to community business.
+              This code of conduct and its related procedures also applies to unacceptable behavior occurring outside
+              the scope of community activities when such behavior has the potential to adversely affect the safety and
+              well-being of community members.</p>
+
+
+            <p>Inspired from:</p>
+            <ul>
+              <li><a href="https://confcodeofconduct.com/">https://confcodeofconduct.com/</a></li>
+              <li><a
+                  href="https://www.ashedryden.com/blog/codes-of-conduct-101-faq">https://www.ashedryden.com/blog/codes-of-conduct-101-faq</a>
+              </li>
+              <li><a href="http://citizencodeofconduct.org/">http://citizencodeofconduct.org/</a></li>
+            </ul>
+            <p>Published under CC-BY-SA</p>
+
+            <p></p>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="inner">
+        <h2 class="major">Get in touch about Talks or Sponsorship</h2>
+        <p>If you would like to propose a talk, don't be shy, just use this form and contact us :) We are also open for
+          any kind of help or sponsorship. With regards to sponsorship, we are mainly looking for companies /
+          organisations that would like to host our events in Luxembourg-City and offer the catering in exchange of some
+          visibility. We can propose to display the name and logo of your company on the meetup event page, we will
+          thank you in tweets about the event and we will thank you during the event.</p>
+        <form method="post" action="https://formspree.io/luxembourgjs.com@gmail.com">
+          <div class="fields">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+        <ul class="contact">
+          <li class="fa-twitter"><a href="https://twitter.com/luxembourgjs">twitter.com/luxembourgjs</a></li>
+          <li class="fa-facebook"><a
+              href="https://www.facebook.com/groups/luxembourgjs/">facebook.com/groups/luxembourgjs</a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; LuxembourgJS. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="theme/assets/js/jquery.min.js"></script>
+  <script src="theme/assets/js/jquery.scrollex.min.js"></script>
+  <script src="theme/assets/js/browser.min.js"></script>
+  <script src="theme/assets/js/breakpoints.min.js"></script>
+  <script src="theme/assets/js/util.js"></script>
+  <script src="theme/assets/js/main.js"></script>
+
+</body>
+
+</html>

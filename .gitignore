@@ -39,6 +39,7 @@ Thumbs.db
 # Others files #
 ################
 .idea
+*.iml
 /node_modules
 Thumbs.db
 .DS_Store

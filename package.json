@@ -1,15 +1,15 @@
 {
-  "name": "luxembourgjs.com",
-  "description": "This is the source code of the website **luxembourgjs.com**",
+  "name": "luxtechpulse.com",
+  "description": "This is the source code of the website **luxtechpulse.com**",
   "keywords": [
-    "luxembourgjs",
+    "luxtechpulse",
     "luxembourg",
     "javascript",
-    "meetup"
+    "meetup",
+    "luxembourgjs"
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
-    "build": "node ./build.js"
   },
   "dependencies": {},
   "devDependencies": {}

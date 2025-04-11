@@ -6,7 +6,8 @@
     "date": "October 2019",
     "authors": [{
       "name": "Sam Vloeberghs",
-      "link": "https://twitter.com/samvloeberghs"
+      "link": "https://twitter.com/samvloeberghs",
+      "image": "img/speakers/sam_vloeberghs.jpg"
     }]
   }, {
     "link": "http://lekzd.ru/presentations/webgl_simple_luxembourg/",
@@ -15,7 +16,8 @@
     "date": "June 2019",
     "authors": [{
       "name": "Aleksandr Korotaev",
-      "link": "https://github.com/lekzd"
+      "link": "https://github.com/lekzd",
+      "image": "img/speakers/aleksandr_korotaev.jpg"
     }]
   }, {
     "link": "https://docs.google.com/presentation/d/1BHJRpiEWq1mIz6uIgV8D2mVGxJ33LNVDHDVT_hwsqx4/edit",
@@ -24,9 +26,11 @@
     "date": "June 2019",
     "authors": [{
       "name": "Marie Baudy",
-      "link": "https://twitter.com/pttmary"
+      "link": "https://twitter.com/pttmary",
+      "image": "img/speakers/marie_baudy.jpg"
     }, {
-      "name": "Artur Spulnik"
+      "name": "Artur Spulnik",
+      "image": "img/speakers/artur_spulnik.jpg"
     }]
   }, {
     "link": "https://github.com/kawan16/nest-heroes/raw/master/Meetup%20Javascript%20Luxembourg%20-%20Nest.pdf",
@@ -35,7 +39,8 @@
     "date": "May 2019",
     "authors": [{
       "name": "Karl Devooght",
-      "link": "https://github.com/kawan16"
+      "link": "https://github.com/kawan16",
+      "image": "img/speakers/karl_devooght.jpg"
     }]
   }, {
     "link": "https://www.slideshare.net/CrowChick/vue-in-motion",
@@ -44,7 +49,8 @@
     "date": "April 2019",
     "authors": [{
       "name": "Rachel Nabors",
-      "link": "http://rachelnabors.com/"
+      "link": "http://rachelnabors.com/",
+      "image": "img/speakers/rachel_nabors.jpg"
     }]
   }, {
     "link": "pres/intro_vue.pdf",
@@ -52,7 +58,8 @@
     "title": "Intro to Vue.js",
     "date": "April 2019",
     "authors": [{
-      "name": "Sami Boudrai"
+      "name": "Sami Boudrai",
+      "image": "img/speakers/sami_boudrai.jpg"
     }]
   }, {
     "link": "https://stephaniewalter.design/blog/lightning-fast-ux-faking-performance-when-theres-no-code-left-to-optimize/",
@@ -61,7 +68,8 @@
     "date": "March 2019",
     "authors": [{
       "name": "Stéphanie Walter",
-      "link": "https://twitter.com/walterstephanie"
+      "link": "https://twitter.com/walterstephanie",
+      "image": "img/speakers/stephanie_walter.jpg"
     }]
   }, {
     "link": "pres/webperf_2019.pptx",
@@ -70,7 +78,8 @@
     "date": "March 2019",
     "authors": [{
       "name": "Jean-pierre Vincent",
-      "link": "https://twitter.com/theystolemynick"
+      "link": "https://twitter.com/theystolemynick",
+      "image": "img/speakers/jean-pierre_vincent.jpg"
     }]
   }, {
     "link": "https://krampstudio.com/offline-webapp-talk/",
@@ -79,7 +88,8 @@
     "date": "February 2019",
     "authors": [{
       "name": "Bertrand Chevrier",
-      "link": "https://twitter.com/kramp"
+      "link": "https://twitter.com/kramp",
+      "image": "img/speakers/bertrand_chevrier.jpg"
     }]
   }, {
     "link": "https://stephaniewalter.design/blog/super-secret-powers-of-mobile-browsers-talk-slides/",
@@ -88,7 +98,8 @@
     "date": "January 2019",
     "authors": [{
       "name": "Stéphanie Walter",
-      "link": "https://twitter.com/walterstephanie"
+      "link": "https://twitter.com/walterstephanie",
+      "image": "img/speakers/stéphanie_walter.jpg"
     }]
   }, {
     "link": "https://docs.google.com/presentation/d/1HCeTpKv6lCXCGJFtkRFoVbkmd_C5-Ggv4h4JlxHyaXQ/edit#slide=id.g45f10dffa6_0_0",
@@ -97,10 +108,12 @@
     "date": "December 2018",
     "authors": [{
       "name": "Guillaume Monnet",
-      "link": "https://twitter.com/255kb"
+      "link": "https://twitter.com/255kb",
+      "image": "img/speakers/guillaume_monnet.jpg"
     }, {
       "name": "Thomas Winckell",
-      "link": "https://github.com/thomaswinckell"
+      "link": "https://github.com/thomaswinckell",
+      "image": "img/speakers/thomas_winckell.jpg"
     }]
   }, {
     "link": "https://www.slideshare.net/vasilikaklimova/webgl-practical-application",
@@ -109,7 +122,8 @@
     "date": "December 2018",
     "authors": [{
       "name": "Vasilika Klimova",
-      "link": "https://twitter.com/lik04ka"
+      "link": "https://twitter.com/lik04ka",
+      "image": "img/speakers/vasilika_klimova.jpg"
     }]
   }, {
     "link": "https://slides.com/nicolasfrizzarin/angular-element/fullscreen",
@@ -118,7 +132,8 @@
     "date": "November 2018",
     "authors": [{
       "name": "Nicolas Frizzarin",
-      "link": "https://twitter.com/Nicooss54"
+      "link": "https://twitter.com/Nicooss54",
+      "image": "img/speakers/nicolas_frizzarin.jpg"
     }]
   }, {
     "link": "pres/devops_SBo.pdf",
@@ -126,7 +141,8 @@
     "title": "Deploy fast and well",
     "date": "November 2018",
     "authors": [{
-      "name": "Sami Boudrai"
+      "name": "Sami Boudrai",
+      "image": "img/speakers/sami_boudrai.jpg"
     }]
   }, {
     "link": "https://docs.google.com/presentation/d/1lhDgVUUWlqhN6ZbWL1Dad0QUwcxPV8zMHp9ssRohZxA/edit?usp=sharing",
@@ -135,7 +151,8 @@
     "date": "October 2018",
     "authors": [{
       "name": "Guillaume Monnet",
-      "link": "https://twitter.com/255kb"
+      "link": "https://twitter.com/255kb",
+      "image": "img/speakers/guillaume_monnet.jpg"
     }]
   }, {
     "link": "https://becoming.lu/about",
@@ -144,7 +161,8 @@
     "date": "October 2018",
     "authors": [{
       "name": "Rodislav Moldovan",
-      "link": "https://bitbucket.org/rodislav"
+      "link": "https://bitbucket.org/rodislav",
+      "image": "img/speakers/rodislav_moldovan.jpg"
     }]
   }, {
     "link": "https://github.com/ffauchille/js-meetup-lu-chatbot",
@@ -153,7 +171,8 @@
     "date": "September 2018",
     "authors": [{
       "name": "Florent Fauchille",
-      "link": "https://github.com/ffauchille"
+      "link": "https://github.com/ffauchille",
+      "image": "img/speakers/florent_fauchille.jpg"
     }]
   }, {
     "link": "https://dom99.now.sh/presentation/reveal.js-2.6.2/test/examples/dom99",
@@ -162,7 +181,8 @@
     "date": "September 2018",
     "authors": [{
       "name": "Cyril Walle",
-      "link": "https://github.com/GrosSacASac"
+      "link": "https://github.com/GrosSacASac",
+      "image": "img/speakers/cyril_walle.jpg"
     }]
   }, {
     "link": "https://speakerdeck.com/littleiffel/reflections-on-operating-a-serverless-api",
@@ -171,7 +191,8 @@
     "date": "June 2018",
     "authors": [{
       "name": "Thierry Nicola",
-      "link": "https://twitter.com/littleiffel"
+      "link": "https://twitter.com/littleiffel",
+      "image": "img/speakers/thierry_nicola.jpg"
     }]
   }, {
     "link": "https://www.dropbox.com/s/gwayo9hn7vfv2q1/CSS-Variables.pdf?dl=0",
@@ -180,7 +201,8 @@
     "date": "May 2018",
     "authors": [{
       "name": "Geoffrey Crofte",
-      "link": "https://twitter.com/geoffrey_crofte"
+      "link": "https://twitter.com/geoffrey_crofte",
+      "image": "img/speakers/geoffrey_crofte.jpg"
     }]
   }, {
     "link": "https://slides.com/alainvagner/deck#/",
@@ -189,7 +211,8 @@
     "date": "May 2018",
     "authors": [{
       "name": "Alain Vagner",
-      "link": "https://twitter.com/biou"
+      "link": "https://twitter.com/biou",
+      "image": "img/speakers/alain_vagner.jpg"
     }]
   }, {
     "link": "https://github.com/ou2s/slides/raw/master/JSMeetup%20Luxembourg%20-%2003042018/JSMeetup_RN_in_Production.pdf",
@@ -198,7 +221,8 @@
     "date": "April 2018",
     "authors": [{
       "name": "Oussama Ghalbzouri",
-      "link": "https://github.com/ou2s"
+      "link": "https://github.com/ou2s",
+      "image": "img/speakers/oussama_ghalbzouri.jpg"
     }]
   }, {
     "link": "https://github.com/GrosSacASac/JavaScript-Set-Up/tree/master/general/html-streaming",
@@ -207,7 +231,8 @@
     "date": "April 2018",
     "authors": [{
       "name": "Cyril Walle",
-      "link": "https://github.com/GrosSacASac/"
+      "link": "https://github.com/GrosSacASac/",
+      "image": "img/speakers/cyril_walle.jpg"
     }]
   }, {
     "link": "https://github.com/anton-kabysh/flowtype-experiments",
@@ -216,7 +241,8 @@
     "date": "March 2018",
     "authors": [{
       "name": "Anton Kabysh",
-      "link": "https://github.com/anton-kabysh"
+      "link": "https://github.com/anton-kabysh",
+      "image": "img/speakers/anton_kabysh.jpg"
     }]
   }, {
     "link": "https://docs.google.com/presentation/d/1E8Cz1QX6nLKzG7Vul9bX8hby9u22iT3k2gByCnBHcyM/edit?usp=sharing",
@@ -225,7 +251,8 @@
     "date": "February 2018",
     "authors": [{
       "name": "Arthur Spitznagel",
-      "link": "https://twitter.com/arthurspitznage"
+      "link": "https://twitter.com/arthurspitznage",
+      "image": "img/speakers/arthur_spitznagel.jpg"
     }]
   }, {
     "link": "https://github.com/Algar/JSLuxembourg-February2018-VisualRegressionTesting",
@@ -234,7 +261,8 @@
     "date": "February 2018",
     "authors": [{
       "name": "Alfonso Garcia",
-      "link": "https://www.yotako.io"
+      "link": "https://www.yotako.io",
+      "image": "img/speakers/alfonso_garcia.jpg"
     }]
   }, {
     "link": "https://docs.google.com/presentation/d/10dvXKYrEZ_H8MElw6Cdpd4u5COBpJPlquT6Kf2o9iNs/edit?usp=sharing",
@@ -243,7 +271,8 @@
     "date": "January 2018",
     "authors": [{
       "name": "Thierry Nicola",
-      "link": "https://twitter.com/littleiffel"
+      "link": "https://twitter.com/littleiffel",
+      "image": "img/speakers/thierry_nicola.jpg"
     }]
   }, {
     "link": "https://js-mf.github.io/",
@@ -252,7 +281,8 @@
     "date": "January 2018",
     "authors": [{
       "name": "Jean-Sébastien Sottet",
-      "link": "https://twitter.com/reversal_js"
+      "link": "https://twitter.com/reversal_js",
+      "image": "img/speakers/jean-sébastien_sottet.jpg"
     }]
   }]
 }

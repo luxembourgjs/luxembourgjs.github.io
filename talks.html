@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Past Talks - Lux TechPulse Meetup</title>
+  <meta name="description"
+    content="Archive of past talks and presentations from the Lux TechPulse community. Featuring topics on Frontend, Backend, Web Technologies, Mobile, AI, and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+  <div class="page-wrapper">
+    <section class="banner" role="banner">
+      <a href="./index.html" class="logo">
+        <img src="img/logo.svg" alt="Lux TechPulse">
+      </a>
+    </section>
+
+    <main id="main">
+      <section id="talks" class="wrapper alt">
+        <div class="inner">
+          <div class="content">
+            <h1 class="major">Previous Presentations</h1>
+            <p>Archive of presentations from our amazing speakers</p>
+            <div class="talks-grid" role="list">
+              <!-- Talks will be dynamically loaded here -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper" role="contentinfo">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">Keep in touch</h2>
+          <nav aria-label="Social links">
+            <ul class="contact">
+              <li><a href="https://www.meetup.com/luxtechpulse/" target="_blank" rel="noopener noreferrer" aria-label="Join us on Meetup"><i class="fab fa-meetup"></i> Become a member</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScPpqGs0eq5zByMwpLf7EN8yofJOP7u_WMpuz9JrmW9ell0ag/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-label="Submit a talk proposal"><i class="far fa-file-alt"></i> Call for papers</a></li>
+              <li><a href="https://www.linkedin.com/company/luxtechpulse" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin"></i> Our LinkedIn</a></li>
+              <li><a href="https://www.youtube.com/@LuxTechPulse" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i> Our YouTube</a></li>
+              <li><a href="https://twitter.com/luxembourgjs" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i> Our Twitter</a></li>
+              <li><a href="./code-of-conduct.html" target="_blank" rel="noopener noreferrer" aria-label="Read our code of conduct"><i class="fas fa-scroll"></i> Code of conduct</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    fetch('./data/pres-data.json')
+      .then(response => response.json())
+      .then(data => {
+        const talksGrid = document.querySelector('.talks-grid');
+        data.slides.forEach(talk => {
+          const talkElement = document.createElement('article');
+          talkElement.setAttribute('role', 'listitem');
+          talkElement.className = 'talk-card';
+          
+          const link = document.createElement('a');
+          link.href = talk.link;
+          link.className = 'talk-link';
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.setAttribute('aria-label', `View presentation: ${talk.title}`);
+
+          const thumb = document.createElement('div');
+          thumb.className = 'talk-thumb';
+          
+          const img = document.createElement('img');
+          img.src = talk.thumb;
+          img.alt = `Thumbnail for ${talk.title}`;
+          img.loading = 'lazy';
+
+          const date = document.createElement('div');
+          date.className = 'talk-date';
+          date.textContent = talk.date;
+          date.setAttribute('aria-label', `Presented on ${talk.date}`);
+
+          const info = document.createElement('div');
+          info.className = 'talk-info';
+          
+          const title = document.createElement('h3');
+          title.textContent = talk.title;
+          
+          const meta = document.createElement('div');
+          meta.className = 'talk-meta';
+          
+          const authors = document.createElement('div');
+          authors.className = 'talk-authors';
+          authors.innerHTML = talk.authors.map(author => {
+            const authorHtml = [];
+            if (author.image) {
+              authorHtml.push(`<img src="${author.image}" alt="${author.name}" class="author-avatar" loading="lazy">`);
+            }
+            if (author.link) {
+              authorHtml.push(`<a href="${author.link}" target="_blank" rel="noopener noreferrer">${author.name}</a>`);
+            } else {
+              authorHtml.push(author.name);
+            }
+            return `<div class="author">${authorHtml.join('')}</div>`;
+          }).join('');
+          
+          const links = document.createElement('div');
+          links.className = 'talk-links';
+          links.innerHTML = '<a href="' + talk.link + '" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Presentation</a>';
+
+          thumb.appendChild(img);
+          thumb.appendChild(date);
+          
+          meta.appendChild(authors);
+          meta.appendChild(links);
+          
+          info.appendChild(title);
+          info.appendChild(meta);
+          
+          link.appendChild(thumb);
+          link.appendChild(info);
+          
+          talkElement.appendChild(link);
+          talksGrid.appendChild(talkElement);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading talks:', error);
+        const talksGrid = document.querySelector('.talks-grid');
+        talksGrid.innerHTML = '<p>Sorry, we could not load the talks at this time. Please try again later.</p>';
+      });
+  </script>
+</body>
+</html>

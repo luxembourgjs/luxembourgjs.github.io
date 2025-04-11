@@ -1,285 +1,311 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Code of Conduct - Lux TechPulse Meetup</title>
+    <meta
+      name="description"
+      content="Code of Conduct for Lux TechPulse Meetup. Lux TechPulse is a community of developers in Luxembourg who are interested in different technologies: Frontend, Backend, different Web and Mobile technologies, AI, and blockchain, professionally or simply for fun. We organise monthly meetups that take place at changing locations."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>LuxembourgJS Meetup</title>
-    <meta name="description"
-          content="The finest JavaScript User Group in Luxembourg - Meeting the first Wednesday of each month">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="theme/assets/css/main.css"/>
-    <noscript>
-        <link rel="stylesheet" href="theme/assets/css/noscript.css"/>
-    </noscript>
-    <style>
-        #banner .logo img {
-            width: 200px;
-            height: 200px;
-        }
+  <body class="is-preload jslu">
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+    <div class="page-wrapper">
+      <section class="banner" role="banner">
+        <a href="./index.html" class="logo">
+          <img src="img/logo.svg" alt="Lux TechPulse">
+        </a>
+      </section>
 
-        #banner {
-            padding: 0;
-        }
+      <main id="main">
+        <section class="community">
+          <div class="inner">
+            <h1 class="major">Lux TechPulse meetup</h1>
+            <p>
+              Lux TechPulse is a community of developers in Luxembourg who are
+              interested in different technologies: Frontend, Backend, different
+              Web and Mobile technologies, AI, and blockchain, professionally or
+              simply for fun. We organise monthly meetups that take place at
+              changing locations.
+            </p>
+            <a
+              href="https://www.meetup.com/luxtechpulse/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="More about Lux TechPulse on Meetup.com"
+              class="special"
+              >More about Lux TechPulse on Meetup.com</a
+            >
+          </div>
+        </section>
 
-        .meetup_widget {
-            background-color: #f6c347;
-            color: black;
-            border-radius: 6px;
-            margin-left: 20px;
-            padding: 10px;
-            text-align: left;
-            font-size: 83%;
-            width: 350px;
-        }
-
-        #m_date {
-            font-size: 120%;
-            font-weight: bold;
-        }
-
-        #m_link a {
-            color: black;
-            font-weight: bold;
-            font-size: 110%;
-            border-bottom: dotted 1px black;
-        }
-
-        #m_nr_going {
-            font-size: 90%;
-        }
-
-        .twitter-timeline {
-            margin-right: 30px;
-        }
-
-        body.jslu {
-            background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("img/bg.jpg");
-        }
-
-        .jslu .gitter-open-chat-button {
-            background-color: #f6c347;
-            color: black;
-            font-weight: bold;
-        }
-
-        .jslu .gitter-open-chat-button {
-            background-color: #f6c347;
-            color: black;
-            font-weight: bold;
-        }
-
-        .jslu.is-preload .gitter-open-chat-button {
-            opacity: 0;
-        }
-
-        @media screen and (max-width: 480px) {
-            .meetup_widget {
-                margin-left: 0;
-                margin-bottom: 40px;
-                width: 100%;
-
-            }
-        }
-    </style>
-    <script>
-        // get data from meetup.com API
-        function updateEvent(response) {
-            let next = response.data.next_event;
-            let date = new Date(next.time);
-            document.getElementById("m_date").innerHTML = date.toLocaleString('en-UK');
-            document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/luxembourgjs/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
-            document.getElementById("m_nr_going").innerHTML = next.yes_rsvp_count;
-        }
-
-
-        function ready(fn) {
-            if (document.readyState != 'loading') {
-                fn();
-            } else {
-                document.addEventListener('DOMContentLoaded', fn);
-            }
-        }
-
-        ready(function () {
-            // JSONP because meetup.com does not know about CORS headers...
-            let script = document.createElement('script');
-            script.src = 'https://api.meetup.com/luxembourgjs?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
-            document.body.appendChild(script);
-        })
-
-
-    </script>
-</head>
-
-<body class="is-preload jslu">
-
-<!-- Page Wrapper -->
-<div id="page-wrapper">
-
-
-    <!-- Gitter "Open Chat" button -->
-    <!-- Customise here https://sidecar.gitter.im/ -->
-    <script>
-        ((window.gitter = {}).chat = {}).options = {
-            room: 'js-luxembourg/Lobby'
-        };
-    </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-
-
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <a href="./index.html">
-                <div class="logo"><img src="img/jslu-logo.jpg" alt="LuxembourgJS"></div>
-                <h1>LuxembourgJS</h1>
-                <p>The finest JavaScript User Group in Luxembourg</p>
-            </a>
-
-            <a href="https://docs.google.com/forms/d/1AAFDPYBTODLPgB82S1auSCqmN7Z5M8DYqYcEeC3r_8k/prefill"
-               class="special">Call for papers</a>
-            <a href="https://live.luxembourgjs.com/b/adm-7am-efn" class="special" title="Open when holding meetups!">live.luxembourgjs.com!</a>
-        </div>
-    </section>
-
-    <!-- Three -->
-    <section id="five" class="wrapper style2">
-        <div class="inner">
+        <section class="wrapper">
+          <div class="inner">
             <div class="content" id="codeofconduct">
-                <h2 class="major">Code of Conduct</h2>
-                <p>All attendees, speakers, sponsors and volunteers at our meetup are required to agree with the
-                    following
-                    code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from
-                    all
-                    participants to help ensure a safe environment for everybody.</p>
+              <h2 class="major">Code of Conduct</h2>
+              <p>
+                All attendees, speakers, sponsors and volunteers at our meetup are
+                required to agree with the following code of conduct. Organisers
+                will enforce this code throughout the event. We expect cooperation
+                from all participants to help ensure a safe environment for
+                everybody.
+              </p>
 
-                <h3>The Quick Version</h3>
-                <p>Our meetup is dedicated to providing a harassment-free experience for everyone, regardless of gender,
-                    gender identity and expression, age, sexual orientation, disability, physical appearance, body size,
-                    race,
-                    ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of
-                    meetup
-                    participants in any form. Sexual language and imagery is not appropriate for any meetup venue,
-                    including
-                    talks, networking, social events, Twitter and other online media. Meetup participants violating
-                    these
-                    rules may be sanctioned or expelled from the meetup at the discretion of the meetup organisers.</p>
+              <h3>The Quick Version</h3>
+              <p>
+                Our meetup is dedicated to providing a harassment-free experience
+                for everyone, regardless of gender, gender identity and
+                expression, age, sexual orientation, disability, physical
+                appearance, body size, race, ethnicity, religion (or lack
+                thereof), or technology choices. We do not tolerate harassment of
+                meetup participants in any form. Sexual language and imagery is
+                not appropriate for any meetup venue, including talks, networking,
+                social events, Twitter and other online media. Meetup participants
+                violating these rules may be sanctioned or expelled from the
+                meetup at the discretion of the meetup organisers.
+              </p>
 
-                <h3>The Less Quick Version</h3>
-                <h4>Purpose</h4>
+              <h3>The Less Quick Version</h3>
+              <h4>Purpose</h4>
 
-                <p>A primary goal of LuxembourgJS is to be inclusive to the largest number of contributors, with the
-                    most
-                    varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and
-                    welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity,
-                    socioeconomic
-                    status, and religion (or lack thereof).
-                    This code of conduct outlines our expectations for all those who participate in our community, as
-                    well as
-                    the consequences for unacceptable behavior. We will also apply those rules for the selection of
-                    speakers,
-                    sponsors, and venues.
-                    We invite all those who participate in LuxembourgJS to help us create a safe and positive experience
-                    for
-                    everyone.</p>
+              <p>
+                A primary goal of LuxembourgJS is to be inclusive to the largest
+                number of contributors, with the most varied and diverse
+                backgrounds possible. As such, we are committed to providing a
+                friendly, safe and welcoming environment for all, regardless of
+                gender, sexual orientation, ability, ethnicity, socioeconomic
+                status, and religion (or lack thereof). This code of conduct
+                outlines our expectations for all those who participate in our
+                community, as well as the consequences for unacceptable behavior.
+                We will also apply those rules for the selection of speakers,
+                sponsors, and venues. We invite all those who participate in
+                LuxembourgJS to help us create a safe and positive experience for
+                everyone.
+              </p>
 
-                <h4>Unacceptable behavior</h4>
-                <p>The following behaviors are considered harassment and are unacceptable within our community:</p>
-                <ul>
-                    <li>Discriminatory jokes and language related to gender, gender identity and expression, age, sexual
-                        orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack
-                        thereof), or
-                        technology choices.
-                    </li>
-                    <li>Posting or displaying sexually explicit or violent material.</li>
-                    <li>Violence, threats of violence or violent language directed against another person.</li>
-                    <li>Posting or threatening to post other people’s personally identifying information ("doxing").
-                    </li>
-                    <li>Personal insults, particularly those related to gender, sexual orientation, race, religion, or
-                        disability.
-                    </li>
-                    <li>Inappropriate photography or recording.</li>
-                    <li>Inappropriate physical contact. You should have someone’s consent before touching them.</li>
-                    <li>Unwelcome sexual attention. This includes, sexualized comments or jokes; inappropriate touching,
-                        groping, and unwelcomed sexual advances. Our meetups are not dating events.
-                    </li>
-                    <li>Deliberate intimidation, stalking or following (online or in person).</li>
-                    <li>Advocating for, or encouraging, any of the above behavior.</li>
-                    <li>Sustained disruption of community events, including talks and presentations.</li>
-                </ul>
+              <h4>Unacceptable behavior</h4>
+              <p>
+                The following behaviors are considered harassment and are
+                unacceptable within our community:
+              </p>
+              <ul>
+                <li>
+                  Discriminatory jokes and language related to gender, gender
+                  identity and expression, age, sexual orientation, disability,
+                  physical appearance, body size, race, ethnicity, religion (or
+                  lack thereof), or technology choices.
+                </li>
+                <li>
+                  Posting or displaying sexually explicit or violent material.
+                </li>
+                <li>
+                  Violence, threats of violence or violent language directed
+                  against another person.
+                </li>
+                <li>
+                  Posting or threatening to post other people’s personally
+                  identifying information ("doxing").
+                </li>
+                <li>
+                  Personal insults, particularly those related to gender, sexual
+                  orientation, race, religion, or disability.
+                </li>
+                <li>Inappropriate photography or recording.</li>
+                <li>
+                  Inappropriate physical contact. You should have someone’s
+                  consent before touching them.
+                </li>
+                <li>
+                  Unwelcome sexual attention. This includes, sexualized comments
+                  or jokes; inappropriate touching, groping, and unwelcomed sexual
+                  advances. Our meetups are not dating events.
+                </li>
+                <li>
+                  Deliberate intimidation, stalking or following (online or in
+                  person).
+                </li>
+                <li>
+                  Advocating for, or encouraging, any of the above behavior.
+                </li>
+                <li>
+                  Sustained disruption of community events, including talks and
+                  presentations.
+                </li>
+              </ul>
 
-                <h4>Consequences of Unacceptable Behavior</h4>
-                <p>Unacceptable behavior from any community member, including sponsors and those with decision-making
-                    authority, will not be tolerated.
-                    Anyone asked to stop unacceptable behavior is expected to comply immediately.
-                    If a participant engages in harassing behavior, the meetup organisers may take any action they deem
-                    appropriate, up to and including a temporary ban or permanent expulsion from the community without
-                    warning.</p>
+              <h4>Consequences of Unacceptable Behavior</h4>
+              <p>
+                Unacceptable behavior from any community member, including
+                sponsors and those with decision-making authority, will not be
+                tolerated. Anyone asked to stop unacceptable behavior is expected
+                to comply immediately. If a participant engages in harassing
+                behavior, the meetup organisers may take any action they deem
+                appropriate, up to and including a temporary ban or permanent
+                expulsion from the community without warning.
+              </p>
 
-                <h4>Reporting an incident</h4>
-                <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns,
-                    please
-                    contact one of the meetup organisers immediately. </p>
+              <h4>Reporting an incident</h4>
+              <p>
+                If you are being harassed, notice that someone else is being
+                harassed, or have any other concerns, please contact one of the
+                meetup organisers immediately.
+              </p>
 
-                <p>
-                    <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">Contact the organisation team</a>
-                </p>
-                <p>
-                    The organisation team will be happy to help participants contact venue security or local law
-                    enforcement,
-                    provide escorts, or otherwise assist those experiencing harassment to feel safe during the
-                    meetups. </p>
+              <p>
+                <a
+                  href="https://www.meetup.com/luxembourgjs/members/?op=leaders"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact the organisation team"
+                  >Contact the organisation team</a
+                >
+              </p>
+              <p>
+                The organisation team will be happy to help participants contact
+                venue security or local law enforcement, provide escorts, or
+                otherwise assist those experiencing harassment to feel safe during
+                the meetups.
+              </p>
 
-                <h4>Addressing Grievances</h4>
-                <p>If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should
-                    notify <a href="https://www.meetup.com/luxembourgjs/members/?op=leaders">the organisation team</a>
-                    with a
-                    concise description of your grievance. Your grievance will be handled in accordance with our
-                    existing
-                    governing policies.</p>
-                <h4>Scope</h4>
-                <p>We expect all participants (attendees; sponsors; speakers; hosts; and other guests) to abide by this
-                    Code
-                    of Conduct in all community venues–online and in-person–as well as in all one-on-one communications
-                    pertaining to community business.
-                    This code of conduct and its related procedures also applies to unacceptable behavior occurring
-                    outside
-                    the scope of community activities when such behavior has the potential to adversely affect the
-                    safety and
-                    well-being of community members.</p>
+              <h4>Addressing Grievances</h4>
+              <p>
+                If you feel you have been falsely or unfairly accused of violating
+                this Code of Conduct, you should notify
+                <a
+                  href="https://www.meetup.com/luxembourgjs/members/?op=leaders"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact the organisation team"
+                  >the organisation team</a
+                >
+                with a concise description of your grievance. Your grievance will
+                be handled in accordance with our existing governing policies.
+              </p>
+              <h4>Scope</h4>
+              <p>
+                We expect all participants (attendees; sponsors; speakers; hosts;
+                and other guests) to abide by this Code of Conduct in all
+                community venues–online and in-person–as well as in all one-on-one
+                communications pertaining to community business. This code of
+                conduct and its related procedures also applies to unacceptable
+                behavior occurring outside the scope of community activities when
+                such behavior has the potential to adversely affect the safety and
+                well-being of community members.
+              </p>
 
-
-                <p>Inspired from:</p>
-                <ul>
-                    <li><a href="https://confcodeofconduct.com/">https://confcodeofconduct.com/</a></li>
-                    <li><a
-                            href="https://www.ashedryden.com/blog/codes-of-conduct-101-faq">https://www.ashedryden.com/blog/codes-of-conduct-101-faq</a>
-                    </li>
-                    <li><a href="http://citizencodeofconduct.org/">http://citizencodeofconduct.org/</a></li>
-                </ul>
-                <p>Published under CC-BY-SA</p>
-
-                <p></p>
-
+              <p>Inspired from:</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://confcodeofconduct.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Conference Code of Conduct"
+                    >https://confcodeofconduct.com/</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.ashedryden.com/blog/codes-of-conduct-101-faq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ashley Dryden's Code of Conduct 101 FAQ"
+                    >https://www.ashedryden.com/blog/codes-of-conduct-101-faq</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://citizencodeofconduct.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Citizen Code of Conduct"
+                    >http://citizencodeofconduct.org/</a
+                  >
+                </li>
+              </ul>
+              <p>Published under CC-BY-SA</p>
             </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="wrapper" role="contentinfo">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Keep in touch</h2>
+            <nav aria-label="Social links">
+              <ul class="contact">
+                <li>
+                  <a
+                    href="https://www.meetup.com/luxtechpulse/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Become a member on Meetup"
+                    class="special"
+                    ><i class="fab fa-meetup"></i> Become a member</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScPpqGs0eq5zByMwpLf7EN8yofJOP7u_WMpuz9JrmW9ell0ag/viewform?usp=dialog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Submit a talk proposal on Google Forms"
+                    class="special"
+                    ><i class="far fa-file-alt"></i> Call for papers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/luxtechpulse"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our LinkedIn page"
+                    class="special"
+                    ><i class="fab fa-linkedin"></i> Our LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@LuxTechPulse"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our YouTube channel"
+                    class="special"
+                    ><i class="fab fa-youtube"></i> Our YouTube</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/luxembourgjs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter"
+                    class="special"
+                    ><i class="fab fa-twitter"></i> Our Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./code-of-conduct.html"
+                    aria-label="Read our Code of Conduct"
+                    class="special"
+                    ><i class="fas fa-scroll"></i> Code of conduct</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </section>
+      </section>
+    </div>
 
-</div>
-
-<!-- Scripts -->
-<script src="theme/assets/js/jquery.min.js"></script>
-<script src="theme/assets/js/jquery.scrollex.min.js"></script>
-<script src="theme/assets/js/browser.min.js"></script>
-<script src="theme/assets/js/breakpoints.min.js"></script>
-<script src="theme/assets/js/util.js"></script>
-<script src="theme/assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,170 +1,101 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>LuxembourgJS Meetup</title>
+  <title>Lux TechPulse Meetup</title>
   <meta name="description"
-    content="The finest JavaScript User Group in Luxembourg - Meeting the first Wednesday of each month">
+    content="Lux TechPulse is a community of developers in Luxembourg who are interested in different technologies: Frontend, Backend, different Web and Mobile technologies, AI, and blockchain, professionally or simply for fun. We organise monthly meetups that take place at changing locations.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="theme/assets/css/main.css" />
-  <noscript>
-    <link rel="stylesheet" href="theme/assets/css/noscript.css" /></noscript>
-  <style>
-    #banner .logo img {
-      width: 200px;
-      height: 200px;
-    }
-
-    #banner {
-      padding: 0;
-    }
-
-    .meetup_widget {
-      background-color: #f6c347;
-      color: black;
-      border-radius: 6px;
-      margin-left: 20px;
-      padding: 10px;
-      text-align: left;
-      font-size: 83%;
-      width: 350px;
-    }
-
-    #m_date {
-      font-size: 120%;
-      font-weight: bold;
-    }
-
-    #m_link a {
-      color: black;
-      font-weight: bold;
-      font-size: 110%;
-      border-bottom: dotted 1px black;
-    }
-
-    #m_nr_going {
-      font-size: 90%;
-    }
-
-    body.jslu {
-      background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("img/bg.jpg");
-    }
-
-    @media screen and (max-width: 480px) {
-      .meetup_widget {
-        margin-left: 0;
-        margin-bottom: 40px;
-        width: 100%;
-
-      }
-    }
-  </style>
-  <script>
-    // get data from meetup.com API
-    function updateEvent(response) {
-      let next = response.data.next_event;
-      let date = new Date(next.time);
-      document.getElementById("m_date").innerHTML = date.toLocaleString('en-UK');
-      document.getElementById("m_link").innerHTML = `<a href="https://www.meetup.com/luxembourgjs/events/${next.id}/">${next.name.replace("JavaScript Meetup Luxembourg", "")}</a>`
-      document.getElementById("m_nr_going").innerHTML = next.yes_rsvp_count;
-    }
-
-
-
-    function ready(fn) {
-      if (document.readyState != 'loading') {
-        fn();
-      } else {
-        document.addEventListener('DOMContentLoaded', fn);
-      }
-    }
-
-    ready(function () {
-      // JSONP because meetup.com does not know about CORS headers...
-      let script = document.createElement('script');
-      script.src = 'https://api.meetup.com/luxembourgjs?&sign=true&callback=updateEvent&photo-host=public&fields=next_event';
-      document.body.appendChild(script);
-    })
-
-
-  </script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="is-preload jslu">
+<body>
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+  <div class="page-wrapper">
+    <section class="banner" role="banner">
+      <a href="./index.html" class="logo">
+        <img src="img/logo.svg" alt="Lux TechPulse">
+      </a>
+    </section>
 
-  <!-- Page Wrapper -->
-  <div id="page-wrapper">
-
-    <!-- Banner -->
-<!--    FIXME, remove this style things and fix the css styling for mobile devices-->
-    <section id="banner" style="margin-bottom: 0">
+    <section class="community">
       <div class="inner">
-        <a href="./index.html">
-          <div class="logo"><img src="img/jslu-logo.jpg" alt="LuxembourgJS"></div>
-          <h1>LuxembourgJS</h1>
-          <p>The finest JavaScript User Group in Luxembourg</p>
-        </a>
-
-        <a href="https://docs.google.com/forms/d/1AAFDPYBTODLPgB82S1auSCqmN7Z5M8DYqYcEeC3r_8k/prefill" class="special">Call
-          for papers</a>
-        <a href="https://live.luxembourgjs.com/b/adm-7am-efn" class="special" title="Open when holding meetups!">live.luxembourgjs.com</a>
+        <h1 class="major">Lux TechPulse meetup</h1>
+        <p>Lux TechPulse is a community of developers in Luxembourg who are interested in different technologies: Frontend, Backend, different Web and Mobile technologies, AI, and blockchain, professionally or simply for fun. We organise monthly meetups that take place at changing locations.</p>
+        <a href="https://www.meetup.com/luxtechpulse/" target="_blank" rel="noopener noreferrer" aria-label="More about Lux TechPulse on Meetup.com" class="special">More about Lux TechPulse on Meetup.com</a>
       </div>
     </section>
 
-    <!-- Wrapper -->
-    <section id="wrapper">
-
-      <!-- One -->
-      <section id="one" class="wrapper spotlight style1">
+    <main id="main">
+      <section class="wrapper spotlight">
         <div class="inner">
-          <div class="meetup_widget">
-            Next meetup:<br />
-            <span id="m_date"></span><br />
-            <span id="m_link"></span><br />
-            <span id="m_nr_going"></span> people going
-          </div>
           <div class="content">
             <h2 class="major">When is the next event?</h2>
-            <p>We usually have one event per month, the first wednesday of the month. Each event is announced on
+            <p>We usually have one event per month, on some Thursdays. Each event is announced on
               meetup.com., where we kindly ask you to RSVP for organisational reasons. The location of the event changes
               regularly, so be sure to check the event page on meetup.com for more details. </p>
-            <a href="https://www.meetup.com/luxembourgjs/" class="special">LuxembourgJS on Meetup.com</a>
+            <a href="./talks.html" class="special">Check our past talks</a>
           </div>
         </div>
       </section>
 
-      <!-- Two -->
-      <section id="two" class="wrapper alt spotlight style2">
+      <section class="wrapper alt spotlight">
         <div class="inner">
           <div class="content">
-            <h2 class="major">KEEP IN TOUCH</h2>
-            <a href="https://docs.google.com/forms/d/1AAFDPYBTODLPgB82S1auSCqmN7Z5M8DYqYcEeC3r_8k/prefill" class="special">Call for papers</a>
-            <a href="https://twitter.com/luxembourgjs" class="special">Our Twitter</a>
-            <a href="https://www.linkedin.com/feed/" class="special">Our LinkedIn</a>
-            <a href="https://www.meetup.com/luxembourgjs/" class="special">Become a member</a>
-            <a href="./code-of-conduct.html" class="special">Code of conduct</a>
+            <h2 class="major">Become a Speaker</h2>
+            <p>Share your knowledge and experience with the Luxembourg tech community! We're always looking for speakers who want to share their insights, experiences, and technical expertise. Whether you're a seasoned presenter or it's your first time speaking, we provide a welcoming and supportive environment.</p>
+            <p>Topics can range from frontend and backend development to AI, blockchain, mobile technologies, or any other tech-related subject that you're passionate about. Talks typically run for 20-30 minutes, followed by Q&A.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpqGs0eq5zByMwpLf7EN8yofJOP7u_WMpuz9JrmW9ell0ag/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-label="Submit your talk proposal" class="special">Submit your talk proposal</a>
           </div>
         </div>
       </section>
 
-    </section>
+      <section class="wrapper spotlight">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Our Partners</h2>
+            <div class="partners-grid">
+              <a href="https://gitnation.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit GitNation" class="partner-link">
+                <img src="img/partners/gitnation.png" alt="Social Partner" class="partner-logo">
+              </a>
+              <a href="https://www.wearedevelopers.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit WeAreDevelopers" class="partner-link">
+                <img src="img/partners/WeAreDevelopers_Logo-Mark.svg" alt="WeAreDevelopers" class="partner-logo">
+              </a>
+              <a href="https://gdg.community.dev/gdg-luxembourg/" target="_blank" rel="noopener noreferrer" aria-label="Visit Google Developer Group Luxembourg" class="partner-link">
+                <img src="img/partners/gdg-logo_dark.svg" alt="Google Developer Group Luxembourg" class="partner-logo">
+              </a>
+              <a href="https://developers.google.com/womentechmakers" target="_blank" rel="noopener noreferrer" aria-label="Visit Women Techmakers" class="partner-link">
+                <img src="img/partners/wtm.png" alt="Partner Logo" class="partner-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="wrapper">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Keep in touch</h2>
+            <nav aria-label="Social links">
+              <ul class="contact">
+                <li><a href="https://www.meetup.com/luxtechpulse/" target="_blank" rel="noopener noreferrer" aria-label="Become a member on Meetup.com" class="special"><i class="fab fa-meetup"></i> Become a member</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScPpqGs0eq5zByMwpLf7EN8yofJOP7u_WMpuz9JrmW9ell0ag/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-label="Submit your talk proposal" class="special"><i class="far fa-file-alt"></i> Call for papers</a></li>
+                <li><a href="https://www.linkedin.com/company/luxtechpulse" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page" class="special"><i class="fab fa-linkedin"></i> Our LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@LuxTechPulse" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel" class="special"><i class="fab fa-youtube"></i> Our YouTube</a></li>
+                <li><a href="https://twitter.com/luxembourgjs" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter" class="special"><i class="fab fa-twitter"></i> Our Twitter</a></li>
+                <li><a href="./code-of-conduct.html" class="special" aria-label="Read our code of conduct"><i class="fas fa-scroll"></i> Code of conduct</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-
-  <!-- Scripts -->
-  <script src="theme/assets/js/jquery.min.js"></script>
-  <script src="theme/assets/js/jquery.scrollex.min.js"></script>
-  <script src="theme/assets/js/browser.min.js"></script>
-  <script src="theme/assets/js/breakpoints.min.js"></script>
-  <script src="theme/assets/js/util.js"></script>
-  <script src="theme/assets/js/main.js"></script>
-
 </body>
 
 </html>

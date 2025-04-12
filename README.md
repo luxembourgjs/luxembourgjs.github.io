@@ -10,7 +10,5 @@ npm install
 ````
 
 # How to add slides
--
-
 - Add your slides to the JSON file `data/pres-data.json`
 - Make a pull request (or push to master if you have the rights)

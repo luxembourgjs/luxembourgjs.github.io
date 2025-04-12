@@ -1,288 +1,904 @@
 {
-  "slides": [{
-    "link": "https://docs.google.com/presentation/d/16_yZG-Z4wuVkluaAuSvo0d4qaJcBcy6BEuSH71JRivY/edit?usp=sharing",
-    "thumb": "pres_thumb/workbox_VSa.png",
-    "title": "Creating powerful offline experiences with Workbox",
-    "date": "October 2019",
-    "authors": [{
-      "name": "Sam Vloeberghs",
-      "link": "https://twitter.com/samvloeberghs",
-      "image": "img/speakers/sam_vloeberghs.jpg"
-    }]
-  }, {
-    "link": "http://lekzd.ru/presentations/webgl_simple_luxembourg/",
-    "thumb": "pres_thumb/webgl_AKo.png",
-    "title": "WebGL and 2D: simple as Web",
-    "date": "June 2019",
-    "authors": [{
-      "name": "Aleksandr Korotaev",
-      "link": "https://github.com/lekzd",
-      "image": "img/speakers/aleksandr_korotaev.jpg"
-    }]
-  }, {
-    "link": "https://docs.google.com/presentation/d/1BHJRpiEWq1mIz6uIgV8D2mVGxJ33LNVDHDVT_hwsqx4/edit",
-    "thumb": "pres_thumb/accessibility_in_practice.png",
-    "title": "Accessibility in practice",
-    "date": "June 2019",
-    "authors": [{
-      "name": "Marie Baudy",
-      "link": "https://twitter.com/pttmary",
-      "image": "img/speakers/marie_baudy.jpg"
-    }, {
-      "name": "Artur Spulnik",
-      "image": "img/speakers/artur_spulnik.jpg"
-    }]
-  }, {
-    "link": "https://github.com/kawan16/nest-heroes/raw/master/Meetup%20Javascript%20Luxembourg%20-%20Nest.pdf",
-    "thumb": "pres_thumb/nest_DKa.png",
-    "title": "Nest - A Progressive Node.js Framework",
-    "date": "May 2019",
-    "authors": [{
-      "name": "Karl Devooght",
-      "link": "https://github.com/kawan16",
-      "image": "img/speakers/karl_devooght.jpg"
-    }]
-  }, {
-    "link": "https://www.slideshare.net/CrowChick/vue-in-motion",
-    "thumb": "pres_thumb/vue_in_motion_NRa.png",
-    "title": "Vue in Motion",
-    "date": "April 2019",
-    "authors": [{
-      "name": "Rachel Nabors",
-      "link": "http://rachelnabors.com/",
-      "image": "img/speakers/rachel_nabors.jpg"
-    }]
-  }, {
-    "link": "pres/intro_vue.pdf",
-    "thumb": "pres_thumb/intro_vue_BSa.png",
-    "title": "Intro to Vue.js",
-    "date": "April 2019",
-    "authors": [{
-      "name": "Sami Boudrai",
-      "image": "img/speakers/sami_boudrai.jpg"
-    }]
-  }, {
-    "link": "https://stephaniewalter.design/blog/lightning-fast-ux-faking-performance-when-theres-no-code-left-to-optimize/",
-    "thumb": "pres_thumb/lightning_fast_ux_SWa.jpg",
-    "title": "Lightning fast UX: faking performance when there’s no code left to optimize",
-    "date": "March 2019",
-    "authors": [{
-      "name": "Stéphanie Walter",
-      "link": "https://twitter.com/walterstephanie",
-      "image": "img/speakers/stephanie_walter.jpg"
-    }]
-  }, {
-    "link": "pres/webperf_2019.pptx",
-    "thumb": "pres_thumb/web_perf_2019_JEv.png",
-    "title": "Web Performance in 2019",
-    "date": "March 2019",
-    "authors": [{
-      "name": "Jean-pierre Vincent",
-      "link": "https://twitter.com/theystolemynick",
-      "image": "img/speakers/jean-pierre_vincent.jpg"
-    }]
-  }, {
-    "link": "https://krampstudio.com/offline-webapp-talk/",
-    "thumb": "pres_thumb/offline-web-app_XYZ.png",
-    "title": "Offline Web Apps",
-    "date": "February 2019",
-    "authors": [{
-      "name": "Bertrand Chevrier",
-      "link": "https://twitter.com/kramp",
-      "image": "img/speakers/bertrand_chevrier.jpg"
-    }]
-  }, {
-    "link": "https://stephaniewalter.design/blog/super-secret-powers-of-mobile-browsers-talk-slides/",
-    "thumb": "pres_thumb/mobile_browsers_SWa.png",
-    "title": "Super Secret Powers of Mobile Browsers",
-    "date": "January 2019",
-    "authors": [{
-      "name": "Stéphanie Walter",
-      "link": "https://twitter.com/walterstephanie",
-      "image": "img/speakers/stéphanie_walter.jpg"
-    }]
-  }, {
-    "link": "https://docs.google.com/presentation/d/1HCeTpKv6lCXCGJFtkRFoVbkmd_C5-Ggv4h4JlxHyaXQ/edit#slide=id.g45f10dffa6_0_0",
-    "thumb": "pres_thumb/typescript_GMo.png",
-    "title": "Typescript: tips and best practices",
-    "date": "December 2018",
-    "authors": [{
-      "name": "Guillaume Monnet",
-      "link": "https://twitter.com/255kb",
-      "image": "img/speakers/guillaume_monnet.jpg"
-    }, {
-      "name": "Thomas Winckell",
-      "link": "https://github.com/thomaswinckell",
-      "image": "img/speakers/thomas_winckell.jpg"
-    }]
-  }, {
-    "link": "https://www.slideshare.net/vasilikaklimova/webgl-practical-application",
-    "thumb": "pres_thumb/webgl_VKl.png",
-    "title": "WebGL Practical application",
-    "date": "December 2018",
-    "authors": [{
-      "name": "Vasilika Klimova",
-      "link": "https://twitter.com/lik04ka",
-      "image": "img/speakers/vasilika_klimova.jpg"
-    }]
-  }, {
-    "link": "https://slides.com/nicolasfrizzarin/angular-element/fullscreen",
-    "thumb": "pres_thumb/angular_element_NFr.png",
-    "title": "Angular Element",
-    "date": "November 2018",
-    "authors": [{
-      "name": "Nicolas Frizzarin",
-      "link": "https://twitter.com/Nicooss54",
-      "image": "img/speakers/nicolas_frizzarin.jpg"
-    }]
-  }, {
-    "link": "pres/devops_SBo.pdf",
-    "thumb": "pres_thumb/devops_SBo.png",
-    "title": "Deploy fast and well",
-    "date": "November 2018",
-    "authors": [{
-      "name": "Sami Boudrai",
-      "image": "img/speakers/sami_boudrai.jpg"
-    }]
-  }, {
-    "link": "https://docs.google.com/presentation/d/1lhDgVUUWlqhN6ZbWL1Dad0QUwcxPV8zMHp9ssRohZxA/edit?usp=sharing",
-    "thumb": "pres_thumb/mockoon_GUm.png",
-    "title": "Mockoon",
-    "date": "October 2018",
-    "authors": [{
-      "name": "Guillaume Monnet",
-      "link": "https://twitter.com/255kb",
-      "image": "img/speakers/guillaume_monnet.jpg"
-    }]
-  }, {
-    "link": "https://becoming.lu/about",
-    "thumb": "pres_thumb/becominglu_ROm.png",
-    "title": "Becoming.lu",
-    "date": "October 2018",
-    "authors": [{
-      "name": "Rodislav Moldovan",
-      "link": "https://bitbucket.org/rodislav",
-      "image": "img/speakers/rodislav_moldovan.jpg"
-    }]
-  }, {
-    "link": "https://github.com/ffauchille/js-meetup-lu-chatbot",
-    "thumb": "pres_thumb/chatbot_FFa.png",
-    "title": "Building chatbots without Cloud",
-    "date": "September 2018",
-    "authors": [{
-      "name": "Florent Fauchille",
-      "link": "https://github.com/ffauchille",
-      "image": "img/speakers/florent_fauchille.jpg"
-    }]
-  }, {
-    "link": "https://dom99.now.sh/presentation/reveal.js-2.6.2/test/examples/dom99",
-    "thumb": "pres_thumb/dom99_CWa.png",
-    "title": "dom99",
-    "date": "September 2018",
-    "authors": [{
-      "name": "Cyril Walle",
-      "link": "https://github.com/GrosSacASac",
-      "image": "img/speakers/cyril_walle.jpg"
-    }]
-  }, {
-    "link": "https://speakerdeck.com/littleiffel/reflections-on-operating-a-serverless-api",
-    "thumb": "pres_thumb/serverless_TNi.jpg",
-    "title": "On Serverless - Using Serverless in Production",
-    "date": "June 2018",
-    "authors": [{
-      "name": "Thierry Nicola",
-      "link": "https://twitter.com/littleiffel",
-      "image": "img/speakers/thierry_nicola.jpg"
-    }]
-  }, {
-    "link": "https://www.dropbox.com/s/gwayo9hn7vfv2q1/CSS-Variables.pdf?dl=0",
-    "thumb": "pres_thumb/css_variables_GCr.jpg",
-    "title": "CSS Variables in the real life",
-    "date": "May 2018",
-    "authors": [{
-      "name": "Geoffrey Crofte",
-      "link": "https://twitter.com/geoffrey_crofte",
-      "image": "img/speakers/geoffrey_crofte.jpg"
-    }]
-  }, {
-    "link": "https://slides.com/alainvagner/deck#/",
-    "thumb": "pres_thumb/accessibility_101_AVa.jpg",
-    "title": "Accessibility 101",
-    "date": "May 2018",
-    "authors": [{
-      "name": "Alain Vagner",
-      "link": "https://twitter.com/biou",
-      "image": "img/speakers/alain_vagner.jpg"
-    }]
-  }, {
-    "link": "https://github.com/ou2s/slides/raw/master/JSMeetup%20Luxembourg%20-%2003042018/JSMeetup_RN_in_Production.pdf",
-    "thumb": "pres_thumb/react_native_OGh.jpg",
-    "title": "React Native in production",
-    "date": "April 2018",
-    "authors": [{
-      "name": "Oussama Ghalbzouri",
-      "link": "https://github.com/ou2s",
-      "image": "img/speakers/oussama_ghalbzouri.jpg"
-    }]
-  }, {
-    "link": "https://github.com/GrosSacASac/JavaScript-Set-Up/tree/master/general/html-streaming",
-    "thumb": "pres_thumb/html_streaming_CWa.jpg",
-    "title": "HTML Streaming",
-    "date": "April 2018",
-    "authors": [{
-      "name": "Cyril Walle",
-      "link": "https://github.com/GrosSacASac/",
-      "image": "img/speakers/cyril_walle.jpg"
-    }]
-  }, {
-    "link": "https://github.com/anton-kabysh/flowtype-experiments",
-    "thumb": "pres_thumb/flow_type_AKa.jpg",
-    "title": "Let your types Flow. Pragmatic introduction to Flowtype",
-    "date": "March 2018",
-    "authors": [{
-      "name": "Anton Kabysh",
+  "slides": [
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/305991140/",
+      "thumb": "",
+      "title": "Switching from Startup to Enterprise",
+      "date": "March 2025",
+      "authors": [
+        {
+          "name": "Anna Shcherbinina",
+          "link": "https://www.linkedin.com/in/anna-shcherbinina-86574665"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/305991140/",
+      "thumb": "",
+      "title": "Finding my own way: ups and downs of having a business in Luxembourg",
+      "date": "March 2025",
+      "authors": [
+        {
+          "name": "Tetyana Karpenko",
+          "link": "https://www.linkedin.com/in/tetyanakarpenko"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/305991140/",
+      "thumb": "",
+      "title": "A comprehensive look at the rapid evolution of AI",
+      "date": "March 2025",
+      "authors": [
+        {
+          "name": "Orsolya Morzsik",
+          "link": "https://www.linkedin.com/in/orsolya-morzsik"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/301528675/",
+      "thumb": "",
+      "title": "Embrace Angular Renaissance with Best Practices",
+      "date": "January 2025",
+      "authors": [
+        {
+          "name": "Nicolas Frizzarin",
+          "link": "https://www.linkedin.com/in/nicolas-frizzarin",
+          "image": "img/speakers/nicolas_frizzarin.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/301528675/",
+      "thumb": "",
+      "title": "Data Persistence with Service Workers",
+      "date": "January 2025",
+      "authors": [
+        {
+          "name": "Gil Fink",
+          "link": "https://www.linkedin.com/in/gilfink"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/300001234/",
+      "thumb": "",
+      "title": "Blockchain Unraveled",
+      "date": "November 2024",
+      "authors": [
+        {
+          "name": "Vasilika Klimova",
+          "link": "https://www.linkedin.com/in/likita",
+          "image": "img/speakers/vasilika_klimova.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxtechpulse/events/300001234/",
+      "thumb": "",
+      "title": "Optimization of Mobile Development Strategies for Maximum Business Impact",
+      "date": "November 2024",
+      "authors": [
+        {
+          "name": "Sasha Denisov",
+          "link": "https://www.linkedin.com/in/aleks-denisov"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300777000/",
+      "thumb": "",
+      "title": "Fine-Tuning Your Reactivity (Harnessing the Power of Signals)",
+      "date": "July 2024",
+      "authors": [
+        {
+          "name": "Salama Ashoush",
+          "link": "https://www.linkedin.com/in/salamaashoush"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300777000/",
+      "thumb": "",
+      "title": "Next.JS – Server-side rendering pros and cons",
+      "date": "July 2024",
+      "authors": [
+        {
+          "name": "Sviatoslav Tretiak",
+          "link": "https://www.linkedin.com/in/stiweb"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776999/",
+      "thumb": "",
+      "title": "Reviewing Remote Procedure Calls (RPC)",
+      "date": "May 2024",
+      "authors": [
+        {
+          "name": "Anton Kabysh",
+          "link": "https://www.linkedin.com/in/anton-kabysh"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776999/",
+      "thumb": "",
+      "title": "From Zero to Qwik: Building Your First App with Confidence",
+      "date": "May 2024",
+      "authors": [
+        {
+          "name": "Nicolas Frizzarin",
+          "link": "https://www.linkedin.com/in/nicolas-frizzarin",
+          "image": "img/speakers/nicolas_frizzarin.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776998/",
+      "thumb": "",
+      "title": "Core JavaScript, and the importance of understanding it",
+      "date": "April 2024",
+      "authors": [
+        {
+          "name": "Levon Asatryan",
+          "link": "https://www.linkedin.com/in/asatryan-levon"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776998/",
+      "thumb": "",
+      "title": "Chrome tools to test Accessibility",
+      "date": "April 2024",
+      "authors": [
+        {
+          "name": "Glafira Zhur",
+          "link": "https://www.linkedin.com/in/glafira-zhur"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776997/",
+      "thumb": "",
+      "title": "Exploring the most commonly used operators of the RxJS library",
+      "date": "March 2024",
+      "authors": [
+        {
+          "name": "Avgi Sotiropoulou",
+          "link": "https://www.linkedin.com/in/avgi-sotiropoulou"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/300776997/",
+      "thumb": "",
+      "title": "Redefining Security: From Passwords to Biometrics and Digital Signatures",
+      "date": "March 2024",
+      "authors": [
+        {
+          "name": "Vasilika Klimova",
+          "link": "https://www.linkedin.com/in/likita/",
+          "image": "img/speakers/vasilika_klimova.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/293279801/",
+      "thumb": "",
+      "title": "Store the data on the Frontend side",
+      "date": "May 2023",
+      "authors": [
+        {
+          "name": "Valentina Ichyova",
+          "link": "https://www.linkedin.com/in/valentina-ichyova/"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/293279801/",
+      "thumb": "",
+      "title": "Happy Healthy Team",
+      "date": "May 2023",
+      "authors": [
+        {
+          "name": "Vasilika Klimova",
+          "link": "https://www.linkedin.com/in/likita",
+          "image": "img/speakers/vasilika_klimova.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/287825607/",
+      "thumb": "",
+      "title": "Web Vitals",
+      "date": "November 2022",
+      "authors": [
+        {
+          "name": "Nicolas Frizzarin",
+          "link": "https://www.linkedin.com/in/nicolas-frizzarin/",
+          "image": "img/speakers/nicolas_frizzarin.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.meetup.com/luxembourgjs/events/287825607/",
+      "thumb": "",
+      "title": "Frontend apps analysis in prod",
+      "date": "November 2022",
+      "authors": [
+        {
+          "name": "Rodislav Moldovan",
+          "link": "https://www.linkedin.com/in/rodislav",
+          "image": "img/speakers/rodislav_moldovan.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Flower Monday – Women in IT in Luxembourg",
+      "date": "March 2021",
+      "authors": [
+        {
+          "name": "Marc Backes",
+          "link": "https://x.com/themarcba",
+          "image": "img/speakers/marc_backes.jpg"
+        },
+        {
+          "name": "Marina Andrieu",
+          "link": ""
+        },
+        {
+          "name": "Vasilika Klimova",
+          "link": "https://www.linkedin.com/in/likita",
+          "image": "img/speakers/vasilika_klimova.jpg"
+        },
+        {
+          "name": "Chaithra Kakunje",
+          "link": ""
+        },
+        {
+          "name": "Dimitra-Niki Mazaraki",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "API mocking with Mockoon",
+      "date": "February 2021",
+      "authors": [
+        {
+          "name": "Guillaume Monet",
+          "link": "https://mockoon.com/",
+          "image": "img/speakers/guillaume_monet.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Managing Async State With React-Query",
+      "date": "February 2021",
+      "authors": [
+        {
+          "name": "Marin Virdol",
+          "link": "https://twitter.com/marinvirdol",
+          "image": "img/speakers/marin_virdol.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Enhancing User Experience With CSS Animations",
+      "date": "November 2020",
+      "authors": [
+        {
+          "name": "Stéphanie Walter",
+          "link": "https://stephaniewalter.design/",
+          "image": "img/speakers/stefanie_walter.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Using a Monorepos to deliver products",
+      "date": "November 2020",
+      "authors": [
+        { "name": "Boris Verhaff", "link": "https://twitter.com/C4r3xS" }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "testing-library",
+      "date": "November 2020",
+      "authors": [
+        {
+          "name": "Luís Rodrigues",
+          "link": "https://goblindegook.com",
+          "image": "img/speakers/luis_rodrigues.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Azure Javascript Services",
+      "date": "November 2020",
+      "authors": [
+        {
+          "name": "Jonathan Hiben",
+          "link": "https://www.linkedin.com/in/jonathanhiben/",
+          "image": "img/speakers/jonathan_hiben.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "How to jump into the JAMStack rocket 🚀 right now",
+      "date": "October 2020",
+      "authors": [
+        {
+          "name": "Thibault Milan",
+          "link": "https://thibaultmilan.com",
+          "image": "img/speakers/thibault_milan.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "The lost art of keyboard navigation",
+      "date": "October 2020",
+      "authors": [
+        {
+          "name": "Alain Vagner",
+          "link": "https://github.com/AlainVagner",
+          "image": "img/speakers/alain_vagner.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "The Power of Pseudo-Elements – A CSS tale from ::before to ::after",
+      "date": "August 2020",
+      "authors": [
+        {
+          "name": "Geoffrey Crofte",
+          "link": "https://twitter.com/geoffreycrofte",
+          "image": "img/speakers/geoffrey_crofte.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "The Phantom of the App: Background Services",
+      "date": "August 2020",
+      "authors": [
+        {
+          "name": "Maxim Salnikov",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Svelte and inclusive development",
+      "date": "July 2020",
+      "authors": [
+        {
+          "name": "Bertrand Chevrier",
+          "link": "https://twitter.com/kramp"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Github Actions: CI, CD, housekeeping, personal assistant and your barista",
+      "date": "July 2020",
+      "authors": [
+        {
+          "name": "Thibault Milan",
+          "link": "https://thibaultmilan.com",
+          "image": "img/speakers/thibault_milan.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "The PWA Cheat Sheet 2020",
+      "date": "June 2020",
+      "authors": [
+        {
+          "name": "Maximiliano Firtman",
+          "link": "https://twitter.com/firt",
+          "image": "img/speakers/maximiliano_firtman.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Implementing Static Websites",
+      "date": "June 2020",
+      "authors": [
+        {
+          "name": "Rodislav Moldovan",
+          "link": "https://twitter.com/rodislavable",
+          "image": "img/speakers/rodislav_moldovan.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Playful webcam",
+      "date": "May 2020",
+      "authors": [
+        {
+          "name": "Zarema Khalilova",
+          "link": "https://zmoki.github.io/"
+        }
+      ]
+    },
+    {
+      "link": "https://live.luxembourgjs.com/b/adm-7am-efn",
+      "thumb": "",
+      "title": "Building Vue.js Reactivity From Scratch",
+      "date": "May 2020",
+      "authors": [
+        {
+          "name": "Marc Backes",
+          "link": "https://marc.dev",
+          "image": "img/speakers/marc_backes.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://wwwen.uni.lu/snt",
+      "thumb": "",
+      "title": "Hexagonal Architecture in NodeJS. A life like example.",
+      "date": "February 2020",
+      "authors": [
+        {
+          "name": "Rodislav Moldovan",
+          "link": "https://github.com/rodislavable",
+          "image": "img/speakers/rodislav_moldovan.jpg"
+        }
+      ]
+    },
+    {
       "link": "https://github.com/anton-kabysh",
-      "image": "img/speakers/anton_kabysh.jpg"
-    }]
-  }, {
-    "link": "https://docs.google.com/presentation/d/1E8Cz1QX6nLKzG7Vul9bX8hby9u22iT3k2gByCnBHcyM/edit?usp=sharing",
-    "thumb": "pres_thumb/ionic_ASp.jpg",
-    "title": "IONIC 3 from scratch to store",
-    "date": "February 2018",
-    "authors": [{
-      "name": "Arthur Spitznagel",
-      "link": "https://twitter.com/arthurspitznage",
-      "image": "img/speakers/arthur_spitznagel.jpg"
-    }]
-  }, {
-    "link": "https://github.com/Algar/JSLuxembourg-February2018-VisualRegressionTesting",
-    "thumb": "pres_thumb/visual_regression_AGa.jpg",
-    "title": "Visual regression testing",
-    "date": "February 2018",
-    "authors": [{
-      "name": "Alfonso Garcia",
-      "link": "https://www.yotako.io",
-      "image": "img/speakers/alfonso_garcia.jpg"
-    }]
-  }, {
-    "link": "https://docs.google.com/presentation/d/10dvXKYrEZ_H8MElw6Cdpd4u5COBpJPlquT6Kf2o9iNs/edit?usp=sharing",
-    "thumb": "pres_thumb/graphql_TNi.jpg",
-    "title": "What the QL? Introduction to GraphQL.",
-    "date": "January 2018",
-    "authors": [{
-      "name": "Thierry Nicola",
-      "link": "https://twitter.com/littleiffel",
-      "image": "img/speakers/thierry_nicola.jpg"
-    }]
-  }, {
-    "link": "https://js-mf.github.io/",
-    "thumb": "pres_thumb/jsmf_JSo.jpg",
-    "title": "The JavaScript Way of Model-Driven Engineering",
-    "date": "January 2018",
-    "authors": [{
-      "name": "Jean-Sébastien Sottet",
-      "link": "https://twitter.com/reversal_js",
-      "image": "img/speakers/jean-sébastien_sottet.jpg"
-    }]
-  }]
+      "thumb": "",
+      "title": "Data Fetching patterns with React Suspense",
+      "date": "February 2020",
+      "authors": [
+        {
+          "name": "Anton Kabysh",
+          "link": "https://github.com/anton-kabysh"
+        }
+      ]
+    },
+    {
+      "link": "https://wwwen.uni.lu/snt",
+      "thumb": "",
+      "title": "In Front of the Pyramid",
+      "date": "January 2020",
+      "authors": [
+        {
+          "name": "Oussama Ghalbzouri",
+          "link": "https://github.com/ou2s",
+          "image": "img/speakers/oussama_ghalbzouri.jpg"
+        }
+      ]
+    },
+    {
+      "link": "",
+      "thumb": "",
+      "title": "Making sense of a 300MB npm package as your dev env in 45 minutes",
+      "date": "December 2019",
+      "authors": [
+        {
+          "name": "Viktor Vincze",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "link": "https://www.linkedin.com/in/jean-marie-bourbon/",
+      "thumb": "pres_thumb/how_i_met_your_browser_kmkz.png",
+      "title": "How I met your browser...security!",
+      "date": "November 2019",
+      "authors": [
+        {
+          "name": "Jean-Marie Bourbon",
+          "link": "https://twitter.com/kmkz_security"
+        }
+      ]
+    },
+
+    {
+      "link": "https://docs.google.com/presentation/d/16_yZG-Z4wuVkluaAuSvo0d4qaJcBcy6BEuSH71JRivY/edit?usp=sharing",
+      "thumb": "pres_thumb/workbox_VSa.png",
+      "title": "Creating powerful offline experiences with Workbox",
+      "date": "October 2019",
+      "authors": [
+        {
+          "name": "Sam Vloeberghs",
+          "link": "https://twitter.com/samvloeberghs",
+          "image": "img/speakers/sam_vloeberghs.jpg"
+        }
+      ]
+    },
+    {
+      "link": "http://lekzd.ru/presentations/webgl_simple_luxembourg/",
+      "thumb": "pres_thumb/webgl_AKo.png",
+      "title": "WebGL and 2D: simple as Web",
+      "date": "June 2019",
+      "authors": [
+        {
+          "name": "Aleksandr Korotaev",
+          "link": "https://github.com/lekzd",
+          "image": "img/speakers/aleksandr_korotaev.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://docs.google.com/presentation/d/1BHJRpiEWq1mIz6uIgV8D2mVGxJ33LNVDHDVT_hwsqx4/edit",
+      "thumb": "pres_thumb/accessibility_in_practice.png",
+      "title": "Accessibility in practice",
+      "date": "June 2019",
+      "authors": [
+        {
+          "name": "Marie Baudy",
+          "link": "https://twitter.com/pttmary",
+          "image": "img/speakers/marie_baudy.jpg"
+        },
+        {
+          "name": "Artur Spulnik",
+          "image": "img/speakers/artur_spulnik.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/kawan16/nest-heroes/raw/master/Meetup%20Javascript%20Luxembourg%20-%20Nest.pdf",
+      "thumb": "pres_thumb/nest_DKa.png",
+      "title": "Nest - A Progressive Node.js Framework",
+      "date": "May 2019",
+      "authors": [
+        {
+          "name": "Karl Devooght",
+          "link": "https://github.com/kawan16",
+          "image": "img/speakers/karl_devooght.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.slideshare.net/CrowChick/vue-in-motion",
+      "thumb": "pres_thumb/vue_in_motion_NRa.png",
+      "title": "Vue in Motion",
+      "date": "April 2019",
+      "authors": [
+        {
+          "name": "Rachel Nabors",
+          "link": "http://rachelnabors.com/",
+          "image": "img/speakers/rachel_nabors.jpg"
+        }
+      ]
+    },
+    {
+      "link": "pres/intro_vue.pdf",
+      "thumb": "pres_thumb/intro_vue_BSa.png",
+      "title": "Intro to Vue.js",
+      "date": "April 2019",
+      "authors": [
+        {
+          "name": "Sami Boudrai",
+          "image": "img/speakers/sami_boudrai.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://stephaniewalter.design/blog/lightning-fast-ux-faking-performance-when-theres-no-code-left-to-optimize/",
+      "thumb": "pres_thumb/lightning_fast_ux_SWa.jpg",
+      "title": "Lightning fast UX: faking performance when there’s no code left to optimize",
+      "date": "March 2019",
+      "authors": [
+        {
+          "name": "Stéphanie Walter",
+          "link": "https://twitter.com/walterstephanie",
+          "image": "img/speakers/stephanie_walter.jpg"
+        }
+      ]
+    },
+    {
+      "link": "pres/webperf_2019.pptx",
+      "thumb": "pres_thumb/web_perf_2019_JEv.png",
+      "title": "Web Performance in 2019",
+      "date": "March 2019",
+      "authors": [
+        {
+          "name": "Jean-pierre Vincent",
+          "link": "https://twitter.com/theystolemynick",
+          "image": "img/speakers/jean-pierre_vincent.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://krampstudio.com/offline-webapp-talk/",
+      "thumb": "pres_thumb/offline-web-app_XYZ.png",
+      "title": "Offline Web Apps",
+      "date": "February 2019",
+      "authors": [
+        {
+          "name": "Bertrand Chevrier",
+          "link": "https://twitter.com/kramp",
+          "image": "img/speakers/bertrand_chevrier.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://stephaniewalter.design/blog/super-secret-powers-of-mobile-browsers-talk-slides/",
+      "thumb": "pres_thumb/mobile_browsers_SWa.png",
+      "title": "Super Secret Powers of Mobile Browsers",
+      "date": "January 2019",
+      "authors": [
+        {
+          "name": "Stéphanie Walter",
+          "link": "https://twitter.com/walterstephanie",
+          "image": "img/speakers/stéphanie_walter.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://docs.google.com/presentation/d/1HCeTpKv6lCXCGJFtkRFoVbkmd_C5-Ggv4h4JlxHyaXQ/edit#slide=id.g45f10dffa6_0_0",
+      "thumb": "pres_thumb/typescript_GMo.png",
+      "title": "Typescript: tips and best practices",
+      "date": "December 2018",
+      "authors": [
+        {
+          "name": "Guillaume Monnet",
+          "link": "https://twitter.com/255kb",
+          "image": "img/speakers/guillaume_monnet.jpg"
+        },
+        {
+          "name": "Thomas Winckell",
+          "link": "https://github.com/thomaswinckell",
+          "image": "img/speakers/thomas_winckell.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.slideshare.net/vasilikaklimova/webgl-practical-application",
+      "thumb": "pres_thumb/webgl_VKl.png",
+      "title": "WebGL Practical application",
+      "date": "December 2018",
+      "authors": [
+        {
+          "name": "Vasilika Klimova",
+          "link": "https://twitter.com/lik04ka",
+          "image": "img/speakers/vasilika_klimova.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://slides.com/nicolasfrizzarin/angular-element/fullscreen",
+      "thumb": "pres_thumb/angular_element_NFr.png",
+      "title": "Angular Element",
+      "date": "November 2018",
+      "authors": [
+        {
+          "name": "Nicolas Frizzarin",
+          "link": "https://twitter.com/Nicooss54",
+          "image": "img/speakers/nicolas_frizzarin.jpg"
+        }
+      ]
+    },
+    {
+      "link": "pres/devops_SBo.pdf",
+      "thumb": "pres_thumb/devops_SBo.png",
+      "title": "Deploy fast and well",
+      "date": "November 2018",
+      "authors": [
+        {
+          "name": "Sami Boudrai",
+          "image": "img/speakers/sami_boudrai.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://docs.google.com/presentation/d/1lhDgVUUWlqhN6ZbWL1Dad0QUwcxPV8zMHp9ssRohZxA/edit?usp=sharing",
+      "thumb": "pres_thumb/mockoon_GUm.png",
+      "title": "Mockoon",
+      "date": "October 2018",
+      "authors": [
+        {
+          "name": "Guillaume Monnet",
+          "link": "https://twitter.com/255kb",
+          "image": "img/speakers/guillaume_monnet.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://becoming.lu/about",
+      "thumb": "pres_thumb/becominglu_ROm.png",
+      "title": "Becoming.lu",
+      "date": "October 2018",
+      "authors": [
+        {
+          "name": "Rodislav Moldovan",
+          "link": "https://bitbucket.org/rodislav",
+          "image": "img/speakers/rodislav_moldovan.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/ffauchille/js-meetup-lu-chatbot",
+      "thumb": "pres_thumb/chatbot_FFa.png",
+      "title": "Building chatbots without Cloud",
+      "date": "September 2018",
+      "authors": [
+        {
+          "name": "Florent Fauchille",
+          "link": "https://github.com/ffauchille",
+          "image": "img/speakers/florent_fauchille.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://dom99.now.sh/presentation/reveal.js-2.6.2/test/examples/dom99",
+      "thumb": "pres_thumb/dom99_CWa.png",
+      "title": "dom99",
+      "date": "September 2018",
+      "authors": [
+        {
+          "name": "Cyril Walle",
+          "link": "https://github.com/GrosSacASac",
+          "image": "img/speakers/cyril_walle.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://speakerdeck.com/littleiffel/reflections-on-operating-a-serverless-api",
+      "thumb": "pres_thumb/serverless_TNi.jpg",
+      "title": "On Serverless - Using Serverless in Production",
+      "date": "June 2018",
+      "authors": [
+        {
+          "name": "Thierry Nicola",
+          "link": "https://twitter.com/littleiffel",
+          "image": "img/speakers/thierry_nicola.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://www.dropbox.com/s/gwayo9hn7vfv2q1/CSS-Variables.pdf?dl=0",
+      "thumb": "pres_thumb/css_variables_GCr.jpg",
+      "title": "CSS Variables in the real life",
+      "date": "May 2018",
+      "authors": [
+        {
+          "name": "Geoffrey Crofte",
+          "link": "https://twitter.com/geoffrey_crofte",
+          "image": "img/speakers/geoffrey_crofte.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://slides.com/alainvagner/deck#/",
+      "thumb": "pres_thumb/accessibility_101_AVa.jpg",
+      "title": "Accessibility 101",
+      "date": "May 2018",
+      "authors": [
+        {
+          "name": "Alain Vagner",
+          "link": "https://twitter.com/biou",
+          "image": "img/speakers/alain_vagner.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/ou2s/slides/raw/master/JSMeetup%20Luxembourg%20-%2003042018/JSMeetup_RN_in_Production.pdf",
+      "thumb": "pres_thumb/react_native_OGh.jpg",
+      "title": "React Native in production",
+      "date": "April 2018",
+      "authors": [
+        {
+          "name": "Oussama Ghalbzouri",
+          "link": "https://github.com/ou2s",
+          "image": "img/speakers/oussama_ghalbzouri.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/GrosSacASac/JavaScript-Set-Up/tree/master/general/html-streaming",
+      "thumb": "pres_thumb/html_streaming_CWa.jpg",
+      "title": "HTML Streaming",
+      "date": "April 2018",
+      "authors": [
+        {
+          "name": "Cyril Walle",
+          "link": "https://github.com/GrosSacASac/",
+          "image": "img/speakers/cyril_walle.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/anton-kabysh/flowtype-experiments",
+      "thumb": "pres_thumb/flow_type_AKa.jpg",
+      "title": "Let your types Flow. Pragmatic introduction to Flowtype",
+      "date": "March 2018",
+      "authors": [
+        {
+          "name": "Anton Kabysh",
+          "link": "https://github.com/anton-kabysh",
+          "image": "img/speakers/anton_kabysh.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://docs.google.com/presentation/d/1E8Cz1QX6nLKzG7Vul9bX8hby9u22iT3k2gByCnBHcyM/edit?usp=sharing",
+      "thumb": "pres_thumb/ionic_ASp.jpg",
+      "title": "IONIC 3 from scratch to store",
+      "date": "February 2018",
+      "authors": [
+        {
+          "name": "Arthur Spitznagel",
+          "link": "https://twitter.com/arthurspitznage",
+          "image": "img/speakers/arthur_spitznagel.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://github.com/Algar/JSLuxembourg-February2018-VisualRegressionTesting",
+      "thumb": "pres_thumb/visual_regression_AGa.jpg",
+      "title": "Visual regression testing",
+      "date": "February 2018",
+      "authors": [
+        {
+          "name": "Alfonso Garcia",
+          "link": "https://www.yotako.io",
+          "image": "img/speakers/alfonso_garcia.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://docs.google.com/presentation/d/10dvXKYrEZ_H8MElw6Cdpd4u5COBpJPlquT6Kf2o9iNs/edit?usp=sharing",
+      "thumb": "pres_thumb/graphql_TNi.jpg",
+      "title": "What the QL? Introduction to GraphQL.",
+      "date": "January 2018",
+      "authors": [
+        {
+          "name": "Thierry Nicola",
+          "link": "https://twitter.com/littleiffel",
+          "image": "img/speakers/thierry_nicola.jpg"
+        }
+      ]
+    },
+    {
+      "link": "https://js-mf.github.io/",
+      "thumb": "pres_thumb/jsmf_JSo.jpg",
+      "title": "The JavaScript Way of Model-Driven Engineering",
+      "date": "January 2018",
+      "authors": [
+        {
+          "name": "Jean-Sébastien Sottet",
+          "link": "https://twitter.com/reversal_js",
+          "image": "img/speakers/jean-sébastien_sottet.jpg"
+        }
+      ]
+    }
+  ]
 }

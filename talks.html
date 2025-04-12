@@ -67,24 +67,24 @@
           talkElement.className = 'talk-card';
           
           const link = document.createElement('a');
-          link.href = talk.link;
+          link.href = talk.link || '#';
           link.className = 'talk-link';
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
+          if (talk.link) {
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+          }
           link.setAttribute('aria-label', `View presentation: ${talk.title}`);
 
           const thumb = document.createElement('div');
           thumb.className = 'talk-thumb';
           
-          const img = document.createElement('img');
-          img.src = talk.thumb;
-          img.alt = `Thumbnail for ${talk.title}`;
-          img.loading = 'lazy';
-
-          const date = document.createElement('div');
-          date.className = 'talk-date';
-          date.textContent = talk.date;
-          date.setAttribute('aria-label', `Presented on ${talk.date}`);
+          if (talk.thumb) {
+            const img = document.createElement('img');
+            img.src = talk.thumb;
+            img.alt = `Thumbnail for ${talk.title}`;
+            img.loading = 'lazy';
+            thumb.appendChild(img);
+          }
 
           const info = document.createElement('div');
           info.className = 'talk-info';
@@ -101,6 +101,8 @@
             const authorHtml = [];
             if (author.image) {
               authorHtml.push(`<img src="${author.image}" alt="${author.name}" class="author-avatar" loading="lazy">`);
+            } else {
+              authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
             }
             if (author.link) {
               authorHtml.push(`<a href="${author.link}" target="_blank" rel="noopener noreferrer">${author.name}</a>`);
@@ -112,13 +114,18 @@
           
           const links = document.createElement('div');
           links.className = 'talk-links';
-          links.innerHTML = '<a href="' + talk.link + '" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Presentation</a>';
+          if (talk.link) {
+            links.innerHTML = `<a href="${talk.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Presentation</a>`;
+          }
 
-          thumb.appendChild(img);
-          thumb.appendChild(date);
+          const date = document.createElement('div');
+          date.className = 'talk-date';
+          date.textContent = talk.date;
+          date.setAttribute('aria-label', `Presented on ${talk.date}`);
           
           meta.appendChild(authors);
           meta.appendChild(links);
+          meta.appendChild(date);
           
           info.appendChild(title);
           info.appendChild(meta);

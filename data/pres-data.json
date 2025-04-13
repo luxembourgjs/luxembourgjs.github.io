@@ -272,9 +272,9 @@
       "date": "February 2021",
       "authors": [
         {
-          "name": "Guillaume Monet",
+          "name": "Guillaume Monnet",
           "link": "https://mockoon.com/",
-          "image": "img/speakers/guillaume_monet.jpg"
+          "image": "img/speakers/guillaume_monnet.jpg"
         }
       ]
     },
@@ -300,7 +300,7 @@
         {
           "name": "Stéphanie Walter",
           "link": "https://stephaniewalter.design/",
-          "image": "img/speakers/stefanie_walter.jpg"
+          "image": "img/speakers/stephanie_walter.jpg"
         }
       ]
     },
@@ -386,7 +386,7 @@
       "authors": [
         {
           "name": "Maxim Salnikov",
-          "link": ""
+          "link": "https://www.linkedin.com/in/webmax"
         }
       ]
     },
@@ -537,8 +537,7 @@
       "authors": [
         {
           "name": "Sam Vloeberghs",
-          "link": "https://twitter.com/samvloeberghs",
-          "image": "img/speakers/sam_vloeberghs.jpg"
+          "link": "https://twitter.com/samvloeberghs"
         }
       ]
     },
@@ -550,8 +549,7 @@
       "authors": [
         {
           "name": "Aleksandr Korotaev",
-          "link": "https://github.com/lekzd",
-          "image": "img/speakers/aleksandr_korotaev.jpg"
+          "link": "https://github.com/lekzd"
         }
       ]
     },
@@ -563,12 +561,10 @@
       "authors": [
         {
           "name": "Marie Baudy",
-          "link": "https://twitter.com/pttmary",
-          "image": "img/speakers/marie_baudy.jpg"
+          "link": "https://twitter.com/pttmary"
         },
         {
-          "name": "Artur Spulnik",
-          "image": "img/speakers/artur_spulnik.jpg"
+          "name": "Artur Spulnik"
         }
       ]
     },
@@ -580,8 +576,7 @@
       "authors": [
         {
           "name": "Karl Devooght",
-          "link": "https://github.com/kawan16",
-          "image": "img/speakers/karl_devooght.jpg"
+          "link": "https://github.com/kawan16"
         }
       ]
     },
@@ -593,8 +588,7 @@
       "authors": [
         {
           "name": "Rachel Nabors",
-          "link": "http://rachelnabors.com/",
-          "image": "img/speakers/rachel_nabors.jpg"
+          "link": "http://rachelnabors.com/"
         }
       ]
     },
@@ -605,8 +599,7 @@
       "date": "April 2019",
       "authors": [
         {
-          "name": "Sami Boudrai",
-          "image": "img/speakers/sami_boudrai.jpg"
+          "name": "Sami Boudrai"
         }
       ]
     },
@@ -631,8 +624,7 @@
       "authors": [
         {
           "name": "Jean-pierre Vincent",
-          "link": "https://twitter.com/theystolemynick",
-          "image": "img/speakers/jean-pierre_vincent.jpg"
+          "link": "https://twitter.com/theystolemynick"
         }
       ]
     },
@@ -644,8 +636,7 @@
       "authors": [
         {
           "name": "Bertrand Chevrier",
-          "link": "https://twitter.com/kramp",
-          "image": "img/speakers/bertrand_chevrier.jpg"
+          "link": "https://twitter.com/kramp"
         }
       ]
     },
@@ -658,7 +649,7 @@
         {
           "name": "Stéphanie Walter",
           "link": "https://twitter.com/walterstephanie",
-          "image": "img/speakers/stéphanie_walter.jpg"
+          "image": "img/speakers/stephanie_walter.jpg"
         }
       ]
     },
@@ -713,8 +704,7 @@
       "date": "November 2018",
       "authors": [
         {
-          "name": "Sami Boudrai",
-          "image": "img/speakers/sami_boudrai.jpg"
+          "name": "Sami Boudrai"
         }
       ]
     },
@@ -752,8 +742,7 @@
       "authors": [
         {
           "name": "Florent Fauchille",
-          "link": "https://github.com/ffauchille",
-          "image": "img/speakers/florent_fauchille.jpg"
+          "link": "https://github.com/ffauchille"
         }
       ]
     },
@@ -765,8 +754,7 @@
       "authors": [
         {
           "name": "Cyril Walle",
-          "link": "https://github.com/GrosSacASac",
-          "image": "img/speakers/cyril_walle.jpg"
+          "link": "https://github.com/GrosSacASac"
         }
       ]
     },
@@ -830,8 +818,7 @@
       "authors": [
         {
           "name": "Cyril Walle",
-          "link": "https://github.com/GrosSacASac/",
-          "image": "img/speakers/cyril_walle.jpg"
+          "link": "https://github.com/GrosSacASac/"
         }
       ]
     },
@@ -843,8 +830,7 @@
       "authors": [
         {
           "name": "Anton Kabysh",
-          "link": "https://github.com/anton-kabysh",
-          "image": "img/speakers/anton_kabysh.jpg"
+          "link": "https://github.com/anton-kabysh"
         }
       ]
     },
@@ -856,8 +842,7 @@
       "authors": [
         {
           "name": "Arthur Spitznagel",
-          "link": "https://twitter.com/arthurspitznage",
-          "image": "img/speakers/arthur_spitznagel.jpg"
+          "link": "https://twitter.com/arthurspitznage"
         }
       ]
     },
@@ -869,8 +854,7 @@
       "authors": [
         {
           "name": "Alfonso Garcia",
-          "link": "https://www.yotako.io",
-          "image": "img/speakers/alfonso_garcia.jpg"
+          "link": "https://www.yotako.io"
         }
       ]
     },
@@ -895,8 +879,7 @@
       "authors": [
         {
           "name": "Jean-Sébastien Sottet",
-          "link": "https://twitter.com/reversal_js",
-          "image": "img/speakers/jean-sébastien_sottet.jpg"
+          "link": "https://twitter.com/reversal_js"
         }
       ]
     }

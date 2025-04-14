@@ -61,92 +61,101 @@
     </div>
   </footer>
 
-  <script>
-    fetch('./data/pres-data.json')
-      .then(response => response.json())
-      .then(data => {
-        const talksGrid = document.querySelector('.talks-grid');
-        data.slides.forEach(talk => {
-          const talkElement = document.createElement('article');
-          talkElement.setAttribute('role', 'listitem');
-          talkElement.className = 'talk-card';
-          
-          const link = document.createElement('a');
-          link.href = talk.link || '#';
-          link.className = 'talk-link';
-          if (talk.link) {
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-          }
-          link.setAttribute('aria-label', `View presentation: ${talk.title}`);
+  <script type="module">
+    import { load_presentation_data } from "./data/load_data.js";
+    function load_avatar(author, authorHtml) {
+      // if author has no image, try to fetch from Github API
+      if (author.github) {
+        const url = new URL(author.github);
+        const username = url.pathname.replace(/^\/(\w+)/, '$1');
+        authorHtml.push(`<img src="https://github.com/${username}.png" alt="${author.name}" class="author-avatar" loading="lazy">`);
+      } else {
+        authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
+      }
+    }
+    
+    load_presentation_data().then(presentation_data => {
+      const talksGrid = document.querySelector('.talks-grid');
+      presentation_data.slides.forEach(talk => {
+        const talkElement = document.createElement('article');
+        talkElement.setAttribute('role', 'listitem');
+        talkElement.className = 'talk-card';
 
-          const thumb = document.createElement('div');
-          thumb.className = 'talk-thumb';
-          
-          if (talk.thumb) {
-            const img = document.createElement('img');
-            img.src = talk.thumb;
-            img.alt = `Thumbnail for ${talk.title}`;
-            img.loading = 'lazy';
-            thumb.appendChild(img);
-          }
+        const link = document.createElement('a');
+        link.href = talk.link || '#';
+        link.className = 'talk-link';
+        if (talk.link) {
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+        }
+        link.setAttribute('aria-label', `View presentation: ${talk.title}`);
 
-          const info = document.createElement('div');
-          info.className = 'talk-info';
-          
-          const title = document.createElement('h3');
-          title.textContent = talk.title;
-          
-          const meta = document.createElement('div');
-          meta.className = 'talk-meta';
-          
-          const authors = document.createElement('div');
-          authors.className = 'talk-authors';
-          authors.innerHTML = talk.authors.map(author => {
-            const authorHtml = [];
-            if (author.image) {
-              authorHtml.push(`<img src="${author.image}" alt="${author.name}" class="author-avatar" loading="lazy">`);
-            } else {
-              authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
-            }
-            if (author.link) {
-              authorHtml.push(`<a href="${author.link}" target="_blank" rel="noopener noreferrer">${author.name}</a>`);
-            } else {
-              authorHtml.push(author.name);
-            }
-            return `<div class="author">${authorHtml.join('')}</div>`;
-          }).join('');
-          
-          const links = document.createElement('div');
-          links.className = 'talk-links';
-          if (talk.link) {
-            links.innerHTML = `<a href="${talk.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Presentation</a>`;
-          }
+        const thumb = document.createElement('div');
+        thumb.className = 'talk-thumb';
 
-          const date = document.createElement('div');
-          date.className = 'talk-date';
-          date.textContent = talk.date;
-          date.setAttribute('aria-label', `Presented on ${talk.date}`);
-          
-          meta.appendChild(authors);
-          meta.appendChild(links);
-          meta.appendChild(date);
-          
-          info.appendChild(title);
-          info.appendChild(meta);
-          
-          link.appendChild(thumb);
-          link.appendChild(info);
-          
-          talkElement.appendChild(link);
-          talksGrid.appendChild(talkElement);
-        });
-      })
-      .catch(error => {
-        console.error('Error loading talks:', error);
-        const talksGrid = document.querySelector('.talks-grid');
-        talksGrid.innerHTML = '<p>Sorry, we could not load the talks at this time. Please try again later.</p>';
+        if (talk.thumb) {
+          const img = document.createElement('img');
+          img.src = talk.thumb;
+          img.alt = `Thumbnail for ${talk.title}`;
+          img.loading = 'lazy';
+          thumb.appendChild(img);
+        }
+
+        const info = document.createElement('div');
+        info.className = 'talk-info';
+
+        const title = document.createElement('h3');
+        title.textContent = talk.title;
+
+        const meta = document.createElement('div');
+        meta.className = 'talk-meta';
+
+        const authors = document.createElement('div');
+        authors.className = 'talk-authors';
+        authors.innerHTML = talk.authors.map(author => {
+          const authorHtml = [];
+          if (author.image) {
+            authorHtml.push(`<img src="${author.image}" alt="${author.name}" class="author-avatar" loading="lazy">`);
+          } else {
+            load_avatar(author, authorHtml);
+          }
+          if (author.link) {
+            authorHtml.push(`<a href="${author.link}" target="_blank" rel="noopener noreferrer">${author.name}</a>`);
+          } else {
+            authorHtml.push(author.name);
+          }
+          if (author.github) {
+            authorHtml.push(`- <a href="${author.github}" target="_blank" rel="noopener noreferrer">Github</a>`);
+          }
+          return `<div class="author">${authorHtml.join('')}</div>`;
+        }).join('');
+
+        const links = document.createElement('div');
+        links.className = 'talk-links';
+        if (talk.link) {
+          links.innerHTML = `<a href="${talk.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Presentation</a>`;
+        }
+
+        const date = document.createElement('div');
+        date.className = 'talk-date';
+        date.textContent = talk.date;
+        date.setAttribute('aria-label', `Presented on ${talk.date}`);
+
+        meta.appendChild(authors);
+        meta.appendChild(links);
+        meta.appendChild(date);
+
+        info.appendChild(title);
+        info.appendChild(meta);
+
+        link.appendChild(thumb);
+        link.appendChild(info);
+
+        talkElement.appendChild(link);
+        talksGrid.appendChild(talkElement);
       });
+    });
   </script>
 </body>
+
 </html>

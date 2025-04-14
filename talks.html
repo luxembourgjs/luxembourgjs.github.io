@@ -62,25 +62,21 @@
   </footer>
 
   <script type="module">
-    import { fetchGithubProfile } from './api/github.js';
-    import { load_data } from "./data/load_data.js";
-    async function loadAvatar(author, authorHtml) {
+    import { load_presentation_data } from "./data/load_data.js";
+    function load_avatar(author, authorHtml) {
       // if author has no image, try to fetch from Github API
-      if (author.link) {
-        const githubProfile = await fetchGithubProfile(author.link);
-        if (githubProfile != null && githubProfile.avatar_url) {
-          console.log('profile: ' + JSON.stringify(githubProfile));
-          authorHtml.push(`<img src="${githubProfile.avatar_url}" alt="${author.name}" class="author-avatar" loading="lazy">`);
-        } else {
-          authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
-        }
+      if (author.github) {
+        const url = new URL(author.github);
+        const username = url.pathname.replace(/^\/(\w+)/, '$1');
+        authorHtml.push(`<img src="https://github.com/${username}.png" alt="${author.name}" class="author-avatar" loading="lazy">`);
+      } else {
+        authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
       }
     }
     
-    const pres_data = await load_data();
-    if (pres_data != null) {
+    load_presentation_data().then(presentation_data => {
       const talksGrid = document.querySelector('.talks-grid');
-      pres_data.slides.forEach(talk => {
+      presentation_data.slides.forEach(talk => {
         const talkElement = document.createElement('article');
         talkElement.setAttribute('role', 'listitem');
         talkElement.className = 'talk-card';
@@ -121,7 +117,7 @@
           if (author.image) {
             authorHtml.push(`<img src="${author.image}" alt="${author.name}" class="author-avatar" loading="lazy">`);
           } else {
-            authorHtml.push(`<div class="author-avatar-placeholder" title="${author.name}" role="img" aria-label="Avatar placeholder for ${author.name}"></div>`);
+            load_avatar(author, authorHtml);
           }
           if (author.link) {
             authorHtml.push(`<a href="${author.link}" target="_blank" rel="noopener noreferrer">${author.name}</a>`);
@@ -158,8 +154,7 @@
         talkElement.appendChild(link);
         talksGrid.appendChild(talkElement);
       });
-    }
-
+    });
   </script>
 </body>
 
